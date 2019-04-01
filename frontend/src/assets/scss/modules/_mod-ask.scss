@@ -1,0 +1,106 @@
+@mixin mod-ask(){
+    //START: Module ASK - Desktop
+    .af-req{
+        &--container{
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        &--heading{
+            font-family: $font-light;
+            @include rem-fallback(font-size, 26);
+            @include rem-fallback(line-height, 30);
+        }
+
+        &--action-items{
+            margin-top: 30px;
+        }
+
+        &--action-item{
+            @include rem-fallback(font-size, 18);
+            @include rem-fallback(line-height, 22);
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+            &:not(:first-child){
+                margin-left: 30px;
+            }
+            &--divider{
+                margin-left: 30px;
+            }
+        }
+    }
+    //END: Module ASK - Desktop
+}
+
+@mixin mod-ask-tablet(){
+    //START: Module ASK - Tablet
+    .af-req{
+        &--container{
+            
+        }
+
+        &--heading{
+            
+        }
+
+        &--action-items{
+            
+        }
+
+        &--action-item{
+            
+
+            &:not(:first-child){
+                
+            }
+            &--divider{
+                
+            }
+        }
+    }
+    //END: Module ASK - Tablet
+}
+
+@mixin mod-ask-mobile(){
+    //START: Module ASK - Mobile
+    .af-req{
+        &--container{
+            
+        }
+
+        &--heading{
+            @include rem-fallback(font-size, 22);
+            @include rem-fallback(line-height, 26);
+        }
+
+        &--action-items{
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        &--action-item{
+            @include rem-fallback(font-size, 15);
+            @include rem-fallback(line-height, 18);
+            border: 1px solid $white;
+            display: block;
+            max-width: 180px;
+            padding: 10px;
+            margin: 0 auto;
+
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+
+            &:not(:first-child){
+                margin-left: auto;
+            }
+            &--divider{
+                
+            }
+        }
+    }
+    //END: Module ASK - Mobile
+}

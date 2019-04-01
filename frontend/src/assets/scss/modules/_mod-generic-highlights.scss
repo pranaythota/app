@@ -1,0 +1,137 @@
+@mixin mod-generic-highlights(){
+    /*START: Module - Generic Highlights - Desktop*/
+    .generic-mod{
+        &--container{
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        &--wrapper{
+            height: 320px;
+        }
+        &--slide{
+            background-color: #0099ff !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover !important;
+
+            &--content{
+                text-align: left;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate( -50% , -50%);
+                width: 100%;
+                padding: 0 20px;
+
+                &--wrapper{
+                    margin: 0 auto;
+                    width: 50%;
+                    height: 100%;
+                    // background-color: rgba(0, 0, 0, 0.75);
+                    
+                    
+                    &.generic-mod--slide--content--left{
+                        margin-left: 0;
+                        background: linear-gradient(to left,rgba(0,0,0,.01) 0,rgba(0,0,0,0.99) 60%);
+                    }
+    
+                    &.generic-mod--slide--content--right{
+                        margin-right: 0;
+                        background: linear-gradient(to right,rgba(0,0,0,.01) 0,rgba(0,0,0,0.99) 60%);
+                    }
+                }
+
+            }
+        }
+        &--heading{            
+            color: $black;
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            margin-bottom: 30px;
+            padding: 10px;
+            display: inline-block;
+            border-bottom: 2px solid #666;
+            border-top: 2px solid #666;
+        }
+        &--slide{
+            color: $white;
+            &--heading{
+                @include rem-fallback(font-size, 24);
+                @include rem-fallback(line-height, 28);
+                margin-bottom: 25px;
+                
+                // Remove these
+                text-align: right;
+                margin-right: 80px;
+            }
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 18);
+                margin-bottom: 40px;
+            }
+        }
+    }
+    /*END: Module - Generic Highlights - Desktop*/
+}
+
+@mixin mod-generic-highlights-tablet(){
+    /*START: Module - Generic Highlights - Tablet*/
+    /*END: Module - Generic Highlights - Tablet*/
+}
+
+@mixin mod-generic-highlights-mobile(){
+    /*START: Module - Generic Highlights - Mobile*/
+    .generic-mod{
+        &--container{
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+
+        &--wrapper{
+            // height: 280px;
+        }
+        &--slide{
+
+            &--content{
+                text-align: left;
+                position: absolute;
+                top: unset;
+                left: unset;
+                bottom: 20px;
+                transform: translate( 0 , 0);
+                width: 100%;
+
+                &--wrapper{
+                    margin: 0 auto;
+                    width: 100%;                   
+                    
+                    &.generic-mod--slide--content--left{
+                        margin-left: 0;
+                        background: linear-gradient(to top,rgba(0,0,0,.01) 0,rgba(0,0,0,0.99) 60%);
+                    }
+    
+                    &.generic-mod--slide--content--right{
+                        margin-right: 0;
+                        background: linear-gradient(to bottom,rgba(0,0,0,.01) 0,rgba(0,0,0,0.89) 90%);
+                    }
+                }
+
+            }
+        }
+        &--heading{           
+        }
+        &--slide{
+            color: $white;
+            &--heading{
+                @include rem-fallback(font-size, 21);
+                @include rem-fallback(line-height, 24);
+                margin-bottom: 15px;
+                
+            }
+            &--desc{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    /*END: Module - Generic Highlights - Mobile*/
+}

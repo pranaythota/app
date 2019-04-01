@@ -1,0 +1,35 @@
+//Mixins for vertically and horizontally align elements using transform property
+@mixin vertical-align-center($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: perspective(1px) translateY(-50%);
+       -moz-transform: perspective(1px) translateY(-50%);
+        -ms-transform: perspective(1px) translateY(-50%);
+            transform: perspective(1px) translateY(-50%);
+}
+
+@mixin horizontal-align-center($position: relative) {
+    position: $position;
+    left: 50%;
+    -webkit-transform: perspective(1px) translateX(-50%);
+       -moz-transform: perspective(1px) translateX(-50%);
+        -ms-transform: perspective(1px) translateX(-50%);
+            transform: perspective(1px) translateX(-50%);
+}
+
+@mixin position-center($position: relative) {
+    position: $position;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: perspective(1px) translateX(-50%) translateY(-50%);
+       -moz-transform: perspective(1px) translateX(-50%) translateY(-50%);
+        -ms-transform: perspective(1px) translateX(-50%) translateY(-50%);
+            transform: perspective(1px) translateX(-50%) translateY(-50%);
+}
+
+@mixin user-select($value: text){
+    -webkit-user-select: $value;
+       -moz-user-select: $value;
+        -ms-user-select: $value;
+            user-select: $value;
+}

@@ -1,0 +1,16 @@
+mixin mod-member-card(user)
+    // START: Member Card
+    .card__container(class="wow zoomIn")
+        .card__inner
+            .card__inner__top
+                .card__inner__top__image(style="background-image:url("+ user.imageUrl +")")
+            .card__inner__bottom
+                .card__inner__bottom__rounded-image(style="background-image:url("+ user.thumbImageUrl +")")
+                .card__inner__bottom__header
+                    h2.card__inner__bottom__header__title #{user.name}
+                    span.card__inner__bottom__header__title__tag-line #{user.position}
+                .card__inner__bottom__desc      
+                    p.card__inner__bottom__desc__content &quot;#{user.shortdesc}&quot;
+                .card__inner__bottom__action-items 
+                    a(data-fancybox href= user.link data-src="#"+ user.id) Read More
+    // END: Member Card

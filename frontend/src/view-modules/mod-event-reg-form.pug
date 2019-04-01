@@ -1,0 +1,77 @@
+mixin mod-event-reg-form()
+    //START: Event Participation Form
+    .section-container.section-container--fixed
+        .event-reg-form__container
+            .event-reg-form__wrapper
+                .event-reg-form__name Stride Against Cancer - Registration
+                .event-reg-form__logo--wrapper
+                    a(href="home.html" title="Aasya Foundation | Home"): img.event-reg-form__logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+                p.event-reg-form__desc "The world's light doesn’t come from the sun it comes from Spreading  love."
+                p.event-reg-form__desc Have you ever been the reason behind someone's happiness? Even the imagination of experiencing that feeling was amazing Nah? Yes it is ..!!! Let us be a part of noble cause, Where no one ever comes to you in lack of happiness.
+                p.event-reg-form__desc There was a well known slokaSarve Janah Sukhino bhavantu which means- Let the People of the world be happy.we shall together built a world of happiness brick by brick with love and care.
+                p.event-reg-form__desc We the team of Aasya wants you to be a part our journey to share,to give,to feed,to care and to spread happiness. Come, join us now in our journey of Service.let us be the Change makers of tomorrow..!
+                p.event-reg-form__desc You can actively participate in 
+                    strong Stride Against Cancer
+                    | &nbsp;by filling the following information..!
+                form#event-reg-form
+                    fieldset
+                        
+                        .form-group.form-group--inline
+                            label.form-group__label(for="firstName") Firstname
+                                span.form-group__label--required *
+                            input.form-group__input(type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" required minlength=3 maxlength=30)
+                        .form-group.form-group--inline
+                            label.form-group__label(for="lastName") Lastname
+                                span.form-group__label--required *
+                            input.form-group__input(type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" required minlength=1 maxlength=30)
+                        .form-group.form-group--inline
+                            label.form-group__label(for="age") Age
+                                span.form-group__label--required *
+                            input.form-group__input(type="tel" id="age" name="age" placeholder="Enter Your Age" required minlength=1 maxlength=2)
+                        .form-group.form-group--inline
+                            label.form-group__label(for="gender") Gender
+                                span.form-group__label--required *
+                            select.form-group__input(id="gender" name="gender" required)
+                                option(value="") Select your Gender
+                                option(value="male") Male
+                                option(value="female") Female
+                                option(value="other") Other
+                        .form-group.form-group--inline
+                            label.form-group__label(for="email") Email
+                                span.form-group__label--required *
+                            input.form-group__input(name="email" type="email" id="email" required placeholder="Enter Your E-Mail")
+                        .form-group.form-group--inline
+                            label.form-group__label(for="phoneno") Phone No.
+                                span.form-group__label--required *
+                            input.form-group__input(name="phoneNumber" type="tel" id="phoneno" required minlength=10 maxlength=10 placeholder="Enter Your Phone Number")
+                        .form-group
+                            input.form-group__input.form-group__input--left(name="tShirt" type="checkbox" id="tShirt")
+                            label.form-group__label.form-group__label--inline.block(for="tShirt") Please click here, if you want to have 
+                                strong T-Shirt
+                                |. Registration fee costs Rs.200 per person
+                                //- a(data-fancybox data-src="#cost-popup" href="javascript:void(0)" title="Cost").link Entry fee will be varied if you opt a T-shirt
+                        .form-group.form-group--inline.hidden
+                            label.form-group__label(for="tShirtSize") T-Shirt Size
+                                span.form-group__label--required *
+                            select.form-group__input(id="tShirtSize" name="tShirtSize" required)
+                                option(value="") Select your T-Shirt size
+                                option(value="xs") Extra Small (XS)
+                                option(value="s") Small (S)
+                                option(value="m") Medium (M)
+                                option(value="l") Large (L)
+                                option(value="xl") Extra Large (XL)
+                                option(value="xxl") XXL
+                                option(value="xxxl") XXXL
+                            span.form-group__help-msg Note: If you desire to have Aasya T-shirt, Registration fee costs Rs.200/person.
+                        .form-group.form-group--inline
+                            label.form-group__label(for="HDYKAE") How do you know about Event
+                                //- span.form-group__label--required *
+                            select.form-group__input(name="HDYKAE" id="HDYKAE")
+                                option(value="") Please Let us Know
+                                option(value="web") Through Internet
+                                option(value="friends") Through Friends
+                                option(value="volunteers") Through Volunteers
+                                option(value="other") Other
+                        .form-group__action-items
+                                button.af-btn.af-btn--default(type="submit") Continue
+    //END: Event Participation Form

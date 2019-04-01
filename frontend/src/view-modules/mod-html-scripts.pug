@@ -1,0 +1,10 @@
+mixin mod-html-scripts(isMap)
+    //START: HTML Scripts
+    script(src="../assets/js/vendor.min.js")
+    script new WOW().init();
+    script(src="../assets/js/bundle.js")
+    if(isMap)
+        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACsX3geK4GnRSlPugvgGt2-7pwwS52Zro")
+    noscript
+        .fixed__top.noScript__error--bg This Application Need JavaScript. Please enable JavaScript in you browser
+    //END: HTML Scripts

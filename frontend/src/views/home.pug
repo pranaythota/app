@@ -1,0 +1,20 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Homepage")
+    body
+        +mod-social-icons-sticky()
+        +mod-header(navItems,0)
+        +mod-homepage-hero()
+        +mod-ask()
+        +mod-projects-events(mainEvents)
+        +mod-generic-highlights("Highlights", highlights, "right")
+        //- +mod-generic-highlights("Events", events, 'left')
+        +mod-vol-speaks()
+        //- +mod-invest-snapshot()
+        +mod-count-me(count)
+        //- +mod-partners()
+        +mod-footer(footerItems)
+        +mod-html-scripts()
+    

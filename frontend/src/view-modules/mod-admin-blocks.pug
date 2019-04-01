@@ -1,0 +1,13 @@
+mixin mod-admin-blocks(blocks)
+    // START: Module Admin Blocks
+    .section-container.section-container--fixed
+        .admin__blocks__container
+            .admin__blocks__wrapper
+                each block in blocks
+                    .admin__todo__block__container
+                        .admin__todo__block__wrapper
+                            .admin__todo__block__top
+                                //- .admin__todo__block__top__inner
+                            .admin__todo__block__bottom
+                                a(href="javascript:void(0)" title= block.title).admin__todo__block__bottom__inner #{block.title}
+    // END: Module Admin Blocks

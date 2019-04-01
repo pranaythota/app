@@ -1,0 +1,70 @@
+mixin mod-contact-content(cityDetails)
+    // START: Module - Contact content
+    .section-container.section-container--fluid
+        .contact__content__wrapper
+            p.contact__content__desc &quot;Contact us to connect lives, with the causes that matters&quot;.
+            p.contact__content__desc.custom Be strong enough to stand with us,smart enough to involve with us and Brave enough to ask for help. Because,Our purpose is to improve the quality of people&#39;s lives by empowering them with our service.
+            p.contact__content__desc.custom &quot;A small kind of gesture can heal someone&#39;s life&quot;. How beautiful a day of a person can be When kind gesture touches it? yes, Little gestures of our&#39;s can change someone&#39;s world for better. Round-the-clock we are here to heal and lit up smiles..! We shall Help one another. There is no time like the present, and no present like the time.
+            p.contact__content__desc.custom Let the springs of service flow from our heart. To Reach out the lesser privileged and also connect with awesome people like us..!! Service is the conjoined twin of love, 
+            p.contact__content__desc.custom
+                strong.wow.fadeInUp Conjoin with us incase of any help ..!! 
+            p.contact__content__desc.custom
+                strong.wow.fadeInUp Contact us to get involved with our team..!!
+            
+    .section-container--fluid
+        .contact__map__container
+            .contact__map__container--auto
+                .contact__map__wrapper
+                    img(src="../assets/images/Map1.png", alt="Map")
+                .contact__location__wrapper.hidden-xs
+                    .contact__location__address
+                        h4.contact__location__address__heading Registered Office
+                        p.contact__location__address__desc
+                            | Aasya Foundation
+                            br
+                            | Plot no. 151, Rd Number 5,
+                            br
+                            | R K H Colony, A S Rao Nagar 
+                            br
+                            | Secunderabad, Telangana 500062
+                            br
+                            | Email: 
+                            a(href="mailto:aasyafoundation@gmail.com" class="link") aasyafoundation@gmail.com
+                            br
+                            | Mobile:&nbsp;&nbsp;
+                            a(href="tel:9492913475" class="link") +91.9492913475
+        .section-container
+            .contact__location__wrapper.visible-xs
+                .contact__location__address
+                    h4.contact__location__address__heading Registered Office
+                    p.contact__location__address__desc
+                        | Aasya Foundation
+                        br
+                        | 16, Dr. A S Rao Nagar Road, Maruthi Arcade
+                        br
+                        | Swamik Nagar, A S Rao Nagar 
+                        br
+                        | Secunderabad, Telangana 500062
+                        br
+                        | Email: 
+                        a(href="mailto:aasyafoundation@gmail.com" class="link") aasyafoundation@gmail.com
+                        br
+                        | Mobile:&nbsp;&nbsp;
+                        a(href="tel:9492913475" class="link") +91.9492913475
+        .contact__content__wrapper.margin0
+            .contact__table__wrapper
+                h2.contact__table__heading Contact Aasya Foundation
+                if(cityDetails)
+                    table
+                        each city in cityDetails
+                            tr.wow.fadeInUp
+                                td #{city.name}
+                                td 
+                                    a(href="tel:" + city.number + "") #{city.number}
+                                td 
+                                    a(href="mailto:" + city.mail + "") #{city.mail}
+    .section-container--fluid
+        .contact__location__map
+            h3.contact__location__map__heading Locate Us
+            .contact__location__map--location#map          
+    // END: Module - Contact content

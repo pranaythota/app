@@ -1,0 +1,151 @@
+@mixin mod-homepage-hero(){
+    @import url('https://fonts.googleapis.com/css?family=Quintessential');
+    /*START: Module - Homepage Hero - Desktop */
+    .hero-container{
+        color: $white;
+    }
+    .hero-slide{
+        // background-color: #ccc;
+        min-height: 500px;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+
+        &--overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0,0,0,0.5);
+        }
+    }
+    .swiper-container{
+        .swiper-slide{
+
+            &.slide-1{
+                background-image: url('../images/slide-01.jpg');
+            }
+
+            &.slide-2{
+                background-image: url('../images/slide-02.jpg');
+            }
+
+            &.slide-3{
+                background-image: url('../images/slide-03.jpg');
+            }
+
+            &.slide-4{
+                background-image: url('../images/slide-04.jpg');
+            }
+            
+            &--content--wrapper{
+                max-width: 800px;
+                height: 100vh;
+                position: relative;
+                opacity: 0;
+                transition: all 1800ms ease-in-out;
+                display: flex;
+                align-items: flex-end;
+                margin-left: auto;
+            }
+
+            &--content--inner{
+            }
+
+            &--heading{
+                @include rem-fallback(font-size, 40);
+                // @include rem-fallback(line-height, normal);
+                line-height: normal;
+                font-weight: normal;
+                @include rem-fallback(letter-spacing, 1.2);
+                margin-bottom: 15px;
+                padding-bottom: 30px;
+                // font-family: 'Tangerine', cursive;
+                // font-family: 'Great Vibes', cursive;
+                // font-family: 'Niconne', cursive;
+                // font-family: 'Romanesco', cursive;
+                font-family: 'Quintessential', cursive;
+                // font-family: 'Fondamento', cursive;
+
+                &--attach{
+                    display: none;
+                    width: 18px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: -40px;
+                    background-color: #fff;
+                }
+            }
+
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 18);
+                @include rem-fallback(letter-spacing, 0.8);
+                margin-bottom: 50px;
+            }
+
+            &.swiper-slide-active{
+                .swiper-slide--content--wrapper{
+                    // transform: translate(0vw , 0);
+                    opacity: 1;
+                    transition: all 1800ms ease-in-out;
+                }
+            }
+        }
+
+        .swiper-button-next{
+            
+        }
+    }
+    /*END: Module - Homepage Hero - Desktop */
+}
+
+@mixin mod-homepage-hero-tablet(){
+    /*START: Module - Homepage Hero - Tablet */
+    .swiper-container{
+        .swiper-slide{
+            background-size: 100%;
+        }
+    }
+    /*END: Module - Homepage Hero - Tablet */
+}
+
+@mixin mod-homepage-hero-mobile(){
+    /*START: Module - Homepage Hero - Mobile */
+    .swiper-container{
+        .swiper-slide{
+            background-size: auto 100%;
+            &--content--wrapper{
+                padding: 0 20px;
+            }
+
+            &--content--inner{
+                // margin-top: 25px;
+            }
+
+            &--heading{
+                @include rem-fallback(font-size, 25);
+                line-height: normal;
+                @include rem-fallback(letter-spacing, 0.8);
+                margin-bottom: 0;
+                padding-bottom: 75px;
+
+                &--attach{
+                    width: 18px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: -40px;
+                }
+            }
+
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 20);
+                margin-bottom: 30px;
+            }
+        }
+    }
+    /*END: Module - Homepage Hero - Mobile */
+}

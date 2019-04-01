@@ -1,0 +1,92 @@
+@mixin mod-longterm-plan(){
+    /* START: Module Long term plan - Desktop */
+    .plan{
+        &__container{
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            // margin-top: 170px;
+            padding: 0 50px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        &__heading{
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            @include rem-fallback(letter-spacing, 0.8);
+            color: #ff3366;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            border-top: 2px solid #999999;
+            border-bottom: 2px solid #999999;
+            margin-bottom: 40px;
+        }
+        &__wrapper{
+            text-align: left;
+        }
+        &__desc{
+            &__heading{
+                @include rem-fallback(font-size, 21);
+                @include rem-fallback(line-height, 24);
+                @include rem-fallback(letter-spacing, 0.8);
+                margin-bottom: 15px;
+            }
+            &__info{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 21);
+                color: #999;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    /* END: Module Long term plan - Desktop */
+}
+
+@mixin mod-longterm-plan-tablet(){
+    /* START: Module Long term plan - Tablet */
+    .plan{
+        &__container{
+            padding: 0 30px;
+            padding-bottom: 20px;
+        }
+        &__heading{
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            @include rem-fallback(letter-spacing, 0.8);
+            margin-bottom: 30px;
+        }
+        &__desc{
+        }
+    }
+    /* END: Module Long term plan - Tablet */
+}
+
+@mixin mod-longterm-plan-mobile(){
+    /* START: Module Long term plan - Mobile */
+    .plan{
+        &__container{
+            padding: 0;
+        }
+        &__heading{
+        }
+        &__wrapper{
+        }
+        &__desc{
+            &__heading{
+                @include rem-fallback(font-size, 21);
+                @include rem-fallback(line-height, 24);
+                @include rem-fallback(letter-spacing, 0.8);
+                margin-bottom: 15px;
+            }
+            &__info{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 21);
+                color: #999;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    /* END: Module Long term plan - Mobile */
+}

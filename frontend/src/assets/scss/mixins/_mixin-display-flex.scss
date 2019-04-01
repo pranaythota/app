@@ -1,0 +1,8 @@
+//Mixin for flex vendor prefixes
+@mixin display-flex(){
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+}

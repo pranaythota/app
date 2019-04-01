@@ -1,0 +1,121 @@
+@mixin mod-partners(){
+    /*START: Module - Partners - Desktop*/
+    .partners{
+        &--container{
+            color: $black;
+            padding: 40px 0;
+        }
+
+        &--items{
+            font-size: 0;
+
+            &--heading{
+                @include rem-fallback(font-size, 24);
+                @include rem-fallback(line-height, 28);
+                margin-bottom: 30px;
+            }
+            
+            &--divider{
+                position: absolute;
+                width: 2px;
+                height: 80%;
+                max-height: 150px;
+                background-color: #000;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%);
+            }
+
+            &--left{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding-right: 20px;
+            }
+
+            &--right{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding-left: 20px;
+            }
+
+            &--image{
+                display: inline-block;
+                max-width: 100%;
+                max-height: 100%;
+                vertical-align: middle;
+                
+                &:not(first-child){
+                    margin-right: 20px;
+                }
+
+                &--wrapper{
+                    width: 200px;
+                    height: 150px;
+                    display: inline-block;
+                }
+            }
+
+        }
+
+    }
+    /*END: Module - Partners - Desktop*/
+}
+
+@mixin mod-partners-tablet(){
+    /*START: Module - Partners - Tablet*/
+    /*END: Module - Partners - Tablet*/
+}
+
+@mixin mod-partners-mobile(){
+    /*START: Module - Partners - Mobile*/
+    .partners{
+        &--container{
+            color: $black;
+            padding: 20px 0;
+        }
+
+        &--items{
+
+            &--heading{
+                @include rem-fallback(font-size, 24);
+                @include rem-fallback(line-height, 28);
+                margin-bottom: 15px;
+            }
+            
+            &--divider{
+                width: 100%;
+                height: 2px;
+                max-height: unset;
+                display: none;
+            }
+
+            &--left{
+                width: 100%;
+                display: block;
+                padding-right: 0px;
+            }
+
+            &--right{
+                width: 100%;
+                display: block;
+                padding-left: 0px;
+            }
+
+            &--image{
+                
+                &:not(first-child){
+                }
+
+                &--wrapper{
+                    width: 150px;
+                    height: 100px;
+                }
+            }
+
+        }
+
+    }
+    /*END: Module - Partners - Mobile*/
+}

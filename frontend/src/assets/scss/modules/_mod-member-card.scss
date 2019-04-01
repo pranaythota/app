@@ -1,0 +1,169 @@
+//Variables - TODO move these to varialbes.scss
+$card-border-radius: 8px;
+$rounded-image-size: 60px;
+$box-shadow-color: #888888;
+
+@mixin mod-member-card(){
+    //START: Module - Member Card - Desktop
+    .card{
+        &__container{
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            height: auto;
+            background-color: #fff;
+            box-shadow: 2px 2px 5px $box-shadow-color;
+            color: #000;
+
+            &:nth-child(2n+1){
+                margin: 0 20px;
+            }
+        }
+        &__inner{
+            &__top{
+                width: 100%;
+                height: 150px;
+                
+                &__image{
+                    background-color: #ccc;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            &__bottom{
+                padding: 5px 10px;
+                padding-bottom: 20px;
+                
+                &__rounded-image{
+                    width: $rounded-image-size;
+                    height: $rounded-image-size;
+                    border-radius: 50%;
+                    background-color: #888;
+                    position: absolute;
+                    top: -($rounded-image-size/4);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &__header{        
+                    margin-left: ($rounded-image-size + 10px );
+                
+                    &__title{
+                        @include rem-fallback(font-size, 15);
+                  
+                        &__tag-line{
+                            @include rem-fallback(font-size, 13);
+                        }
+                    }
+                } 
+
+                &__desc{
+                    padding: 15px 10px;
+                    margin-top: 10px;
+                
+                    &__content{
+                        @include rem-fallback(font-size, 15);
+                        line-height: 18px;
+                    }
+                }
+                
+                &__action-items{
+                    text-align : right;
+                    // margin-top: 15px;
+                    
+                    a {
+                        @include rem-fallback(font-size, 14);
+                        color: #0078bd;
+                        font-weight: bold;
+                  
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //END: Module - Member Card - Desktop
+}
+
+@mixin mod-member-card-tablet(){
+    //START: Module - Member Card - Tablet
+    
+    //END: Module - Member Card - Tablet
+}
+
+@mixin mod-member-card-mobile(){
+    //START: Module - Member Card - Mobile
+    .card{
+        &__container{
+            margin-bottom: 30px;
+                
+            &:nth-child(2n+1){
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+        &__inner{
+            &__top{
+                width: 100%;
+                height: 150px;
+                
+                &__image{
+                    background-color: #ccc;
+                    height: 100%;
+                }
+            }
+            &__bottom{
+                padding: 5px 10px;
+                padding-bottom: 20px;
+                
+                &__rounded-image{
+                    width: $rounded-image-size;
+                    height: $rounded-image-size;
+                    border-radius: 50%;
+                    background-color: #888;
+                    position: absolute;
+                    top: -($rounded-image-size/4);
+                }
+                &__header{        
+                    margin-left: ($rounded-image-size + 10px );
+                
+                    &__title{
+                        @include rem-fallback(font-size, 15);
+                  
+                        &__tag-line{
+                            @include rem-fallback(font-size, 13);
+                        }
+                    }
+                } 
+
+                &__desc{
+                    padding: 15px 10px;
+                    margin-top: 10px;
+                
+                    &__content{
+                        @include rem-fallback(font-size, 15);
+                        line-height: 18px;
+                    }
+                }
+                
+                &__action-items{
+                    text-align : right;
+                    // margin-top: 15px;
+                    
+                    a {
+                        @include rem-fallback(font-size, 14);
+                        color: #0078bd;
+                        font-weight: bold;
+                  
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //END: Module - Member Card - Mobile
+}

@@ -1,0 +1,16 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Verified Successfully")
+    body.bg--grey--alpha
+        +mod-social-icons-sticky()
+        +mod-header(navItems)
+        .section-container.section-container--fixed
+            .form__submit__message__wrapper
+                .form__submit__message__inner
+                    h2.form__submit__message__heading Your Email has been verified Successfully
+                    p.form__submit__message__desc Our representative will contact you soon
+                    a(href="javascript:void(0)").form__submit__registernew__link Register New Volunteer
+        +mod-footer(footerItems, true)
+        +mod-html-scripts()

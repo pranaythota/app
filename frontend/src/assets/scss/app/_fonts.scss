@@ -1,0 +1,76 @@
+@font-face {
+	font-family:'UniversLTStd-Regular';
+	src: url('../fonts/UniversLTStd_gdi.eot');
+	src: url('../fonts/UniversLTStd_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd_gdi.woff') format('woff'),
+		url('../fonts/UniversLTStd_gdi.ttf') format('truetype'),
+		url('../fonts/UniversLTStd_gdi.svg#UniversLTStd-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'UniversLTStd-Black';
+	src: url('../fonts/UniversLTStd-Black_gdi.eot');
+	src: url('../fonts/UniversLTStd-Black_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd-Black_gdi.woff') format('woff'),
+		url('../fonts/UniversLTStd-Black_gdi.ttf') format('truetype'),
+		url('../fonts/UniversLTStd-Black_gdi.svg#UniversLTStd-Black') format('svg');
+	font-weight: 850;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'UniversLTStd-Bold';
+	src: url('../fonts/UniversLTStd-Bold_gdi.eot');
+	src: url('../fonts/UniversLTStd-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd-Bold_gdi.woff') format('woff'),
+		url('../fonts/UniversLTStd-Bold_gdi.ttf') format('truetype'),
+		url('../fonts/UniversLTStd-Bold_gdi.svg#UniversLTStd-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family:'UniversLTStd-Light';
+	src: url('../fonts/UniversLTStd-Light_gdi.eot');
+	src: url('../fonts/UniversLTStd-Light_gdi.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/UniversLTStd-Light_gdi.woff') format('woff'),
+		url('../fonts/UniversLTStd-Light_gdi.ttf') format('truetype'),
+		url('../fonts/UniversLTStd-Light_gdi.svg#UniversLTStd-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Univers-Medium";
+  src: url("../fonts/univers-medium-58987662f08d2.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/univers-medium-58987662f08d2.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/univers-medium-58987662f08d2.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/univers-medium-58987662f08d2.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/univers-medium-58987662f08d2.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/univers-medium-58987662f08d2.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/univers-medium-58987662f08d2.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+	font-family:'icomoon';
+	src:url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('../fonts/IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

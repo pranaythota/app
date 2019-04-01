@@ -1,0 +1,109 @@
+@import "../modules/modules";
+@import "../mixins/mixins";
+@import "normalize";
+@import "variables";
+@import "vendor";
+@import "common";
+@import "icomoon";
+@import "fonts";
+
+/*START: Desktop Styles */
+@include mod-buttons();
+@include mod-social-icons-sticky();
+@include mod-header();
+@include mod-homepage-hero();
+@include mod-about-hero();
+@include mod-longterm-plan();
+@include mod-contact-hero();
+@include mod-board-members();
+@include mod-member-card();
+@include mod-pillars();
+@include mod-theme();
+@include mod-count-me();
+@include mod-ask();
+@include mod-projects-events();
+@include mod-vol-speaks();
+@include mod-invest-snapshot();
+@include mod-generic-highlights();
+@include mod-partners();
+@include mod-reg-form();
+@include mod-footer();
+@include mod-confirmation();
+@include mod-login-form();
+@include mod-event-participation();
+@include mod-admin-blocks();
+@include mod-terms-conditions();
+@include mod-privacy-policy();
+@include mod-generic-event();
+@include mod-aasya-oldage-home();
+@include mod-working();
+@include mod-events();
+/*END: Desktop Styles */
+
+/*START: Tablet Styles */
+@media all and (min-width: 768px) and (max-width: 1023px){
+    @include mod-header-tablet();
+    @include mod-social-icons-sticky-tablet();
+    @include mod-homepage-hero-tablet();
+    @include mod-about-hero-tablet();    
+    @include mod-longterm-plan-tablet();
+    @include mod-contact-hero-tablet();
+    @include mod-board-members-tablet();
+    @include mod-count-me-tablet();
+    @include mod-member-card-tablet();
+    @include mod-pillars-tablet();
+    @include mod-theme-tablet();
+    @include mod-ask-tablet();
+    @include mod-projects-events-tablet();
+    @include mod-vol-speaks-tablet();
+    @include mod-invest-snapshot-tablet();
+    @include mod-generic-highlights-tablet();
+    @include mod-partners-tablet();
+    @include mod-reg-form-tablet();
+    @include mod-footer-tablet();
+    @include mod-confirmation-tablet();
+    @include mod-login-form-tablet();
+    @include mod-event-participation-tablet();
+    @include mod-admin-blocks-tablet();
+    @include mod-terms-conditions-tablet();
+    @include mod-privacy-policy-tablet();
+    @include mod-generic-event-tablet();
+    @include mod-aasya-oldage-home-tablet();
+    @include mod-working-tablet();
+    @include mod-events-tablet();
+}
+/*END: Tablet Styles */
+
+/*START: Mobile Styles */
+@media all and (max-width: 767px){
+    @include mod-header-mobile();
+    @include mod-social-icons-sticky-mobile();
+    @include mod-homepage-hero-mobile();
+    @include mod-about-hero-mobile();
+    @include mod-longterm-plan-mobile();
+    @include mod-contact-hero-mobile();
+    @include mod-board-members-mobile();
+    @include mod-count-me-mobile();
+    @include mod-member-card-mobile();
+    @include mod-pillars-mobile();
+    @include mod-theme-mobile();
+    @include mod-ask-mobile();
+    @include mod-projects-events-mobile();
+    @include mod-vol-speaks-mobile();
+    @include mod-invest-snapshot-mobile();
+    @include mod-generic-highlights-mobile();
+    @include mod-partners-mobile();
+    @include mod-reg-form-mobile();
+    @include mod-footer-mobile();
+    @include mod-confirmation-mobile();
+    @include mod-login-form-mobile();
+    @include mod-event-participation-mobile();
+    @include mod-admin-blocks-mobile();
+    @include mod-terms-conditions-mobile();
+    @include mod-privacy-policy-mobile();
+    @include mod-generic-event-mobile();
+    @include mod-aasya-oldage-home-mobile();
+    @include mod-working-mobile();
+    @include mod-events-mobile();
+}
+/*END: Mobile Styles */

@@ -1,0 +1,63 @@
+@mixin mod-buttons(){
+    /*START: Module Button - Desktop*/
+    .af-btn{
+        @include rem-fallback(font-size, 16);
+        @include rem-fallback(line-height, 20);
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 8px 20px;
+        width: 180px;
+        height: 40px;
+        transition: all 400ms ease-in-out;
+
+        &.af-btn--default{
+            @include rem-fallback(letter-spacing, 0.8);
+            border: 1px solid $theme;
+            background-color: $theme;
+            padding: 10px 15px;
+            width: auto;
+            height: auto;
+            color: $white;
+            border-radius: 2px;
+
+            // &:hover{
+            //     background-color: transparent;
+            //     border: 1px solid #fff;
+            //     transition: all 400ms ease-in-out;
+            // }
+        }
+
+        &.af-btn--black-border{
+            border: 1px solid $black;
+            color: $black;
+
+            &:hover{
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        &.af-btn--white-border{
+            border: 1px solid $white;
+            color: $white;
+
+            &:hover{
+                background-color: $theme;
+                border-color: $theme;
+                color: $white;
+            }
+        }
+    }
+    /*END: Module Button - Desktop*/
+}
+
+@mixin mod-buttons-tablet(){
+    /*START: Module Button - Tablet*/
+    /*END: Module Button - Tablet*/
+}
+
+@mixin mod-buttons-mobile(){
+    /*START: Module Button - Mobile*/
+    /*END: Module Button - Mobile*/
+}

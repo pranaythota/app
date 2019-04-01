@@ -1,0 +1,301 @@
+@mixin mod-events(){
+    /*START: module events - Desktop */
+    .padding-top{
+        padding-top: 250px;
+    }
+    .event__image--fluid{
+        width: 100% !important;
+        margin: 15px 0 !important;
+        height: 400px;
+    }
+    .event__image--t1{
+        background-image: url('../images/events-1.jpg');
+    }
+    .event__image--t2{
+        background-image: url('../images/events-2.jpg');
+    }
+    .event__image--t3{
+        background-image: url('../images/events-3.jpg');
+    }
+
+    .event{
+        &__banner{
+            width: 100%;
+            height: 100%;
+            min-height: 550px;
+            background-color: rgba($color: #000, $alpha: 1);
+            background-image: url('../images/events-banner.jpg');
+            background-position: -300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+            &__overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+        &__details{
+            > div {
+                margin: 10px 0;
+            }
+        }
+        &__content{
+            &__wrapper{
+                width: 650px;
+                padding: 40px 25px;
+                margin-right: auto;
+                margin-left: 50px;
+                background-color: rgba(255,255,255,0.85);
+                color: #000;
+                border-radius: 6px;
+                margin-bottom: 120px;
+            }
+            &__heading{
+                text-align: center;
+                font-size: 26px;
+                margin: 20px 0 10px 0;
+                color: $theme;
+
+                &--secondary{
+                    margin: 20px 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            &__desc{
+                font-size: 16px;
+                line-height: 21px;
+                margin: 20px 0;
+            }
+            &__tagline{
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+        &__details{
+            &__wrapper{
+                margin-left: auto;
+                margin-right: auto;
+                position: fixed;
+                right: 120px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 999;
+
+                span {
+                    margin: 10px 0;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+            &__address{
+                background-color: rgba($color: #fff, $alpha: 0.15);
+                padding: 20px 40px;
+                min-width: 220px;
+                max-width: 200px;
+                margin-top: 40px;
+            }
+            &__image{
+                background-image: url("../images/events.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: auto;
+                height: 155px;
+                display: block;
+            }
+            &__link{
+                width: 220px;
+                padding: 15px 0;
+                background: #337ab7;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 0;
+            }
+        }
+    }
+    /*END: module events - Desktop */
+}
+
+@mixin mod-events-tablet(){
+    /*START: module events - Tablet */
+    .event__image--fluid{
+        width: 100% !important;
+        margin: 15px 0 !important;
+        height: 300px;
+    }
+    .padding-top{
+        padding-top: 180px;
+    }
+    .event{
+        &__banner{
+            min-height: 650px;
+            background-position: -300px;
+
+            &__overlay{
+            }
+        }
+        &__content{
+            &__wrapper{
+                width: 450px;
+                padding: 30px 25px;
+                margin-left: 0;
+                margin-bottom: 180px;
+            }
+            &__heading{
+                font-size: 24px;
+                margin: 20px 0 10px 0;
+
+                &--secondary{
+                    margin: 10px 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            &__desc{
+                font-size: 16px;
+                line-height: 21px;
+                margin: 20px 0;
+            }
+            &__tagline{
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+        &__details{
+            &__wrapper{
+                right: 60px;
+
+                span {
+                }
+            }
+            &__address{
+                background-color: rgba($color: #fff, $alpha: 0.15);
+                padding: 20px 40px;
+                min-width: 220px;
+                max-width: 200px;
+                margin-top: 40px;
+            }
+            &__image{
+                background-image: url("../images/events.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: auto;
+                height: 155px;
+                display: block;
+            }
+            &__link{
+                width: 220px;
+                padding: 15px 0;
+                background: #337ab7;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 0;
+            }
+        }
+    }
+    /*END: module events - Tablet */
+}
+
+@mixin mod-events-mobile(){
+    /*START: module events - Mobile */
+    .event__image--fluid{
+        width: 100% !important;
+        margin: 15px 0 !important;
+        height: 300px;
+    }
+    .padding-top{
+        padding-top: 550px;
+    }
+    .event{
+        &__banner{
+            min-height: 550px;
+            background-position: -400px;
+
+            &__overlay{
+            }
+        }
+        &__details{
+            > div {
+            }
+        }
+        &__content{
+            &__wrapper{
+                width: 100%;
+                padding: 30px 25px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 80px;
+            }
+            &__heading{
+                text-align: center;
+                font-size: 26px;
+                margin: 20px 0 10px 0;
+                color: $theme;
+
+                &--secondary{
+                    margin: 10px 0;
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+            &__desc{
+                font-size: 16px;
+                line-height: 21px;
+                margin: 20px 0;
+            }
+            &__tagline{
+                text-align: center;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+        }
+        &__details{
+            &__wrapper{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                right: 0;
+                transform: translateX(-50%);
+                @include prefix(transform, translateX(-50%));
+                padding-top: 140px;
+
+                span {
+                }
+            }
+            &__address{
+                background-color: rgba($color: #fff, $alpha: 0.15);
+                padding: 20px 40px;
+                min-width: 220px;
+                max-width: 200px;
+                margin-top: 40px;
+            }
+            &__image{
+                background-image: url("../images/events.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 300px;
+                height: 155px;
+                display: block;
+            }
+            &__link{
+                width: 220px;
+                padding: 15px 0;
+                background: #337ab7;
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                border-radius: 0;
+            }
+        }
+    }
+    /*END: module events - Mobile */
+}

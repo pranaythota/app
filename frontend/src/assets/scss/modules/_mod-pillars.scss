@@ -1,0 +1,196 @@
+@mixin mod-pillars(){
+    /* START: Module Pillars - Desktop */
+    .bg--custom{
+        background-color: #555;
+    }
+    .pillars{
+        &__tagline{
+            @include rem-fallback(font-size, 15);
+            @include rem-fallback(line-height, 21);
+            text-align: right;
+        }
+        &__container{
+            padding: 50px;
+            padding-top: 110px;
+            padding-bottom: 0;
+            width: 100%;
+            max-width: 1140px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__heading{
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            @include rem-fallback(letter-spacing, 0.8);
+            color: #ff3366;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            border-top: 2px solid #999999;
+            border-bottom: 2px solid #999999;
+            margin-bottom: 40px;
+        }
+        &__wrapper{
+            width: 100%;
+            font-size: 0;
+            @include display-flex();
+            padding: 40px 0;
+            align-items: center;
+            &:not(:first-child){
+                //margin-top: 70px;
+            }
+        }
+        &__content{
+            padding: 15px 25px;
+            // display: inline-block;
+            width: 75%;
+            color: #000;
+
+            &__heading{
+                @include rem-fallback(font-size, 21);
+                @include rem-fallback(line-height, 24);                
+                @include rem-fallback(letter-spacing, 0.8);                
+                margin-bottom: 20px;
+            }
+            &__desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 18);
+                margin-bottom: 20px;
+            }
+        }
+        &__bgImage{
+            width: 25%;
+            height: 350px;
+
+            &__founder{
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: cover;
+                background-image: url("../images/sreeram.jpg");
+                max-height: 350px;
+            }
+
+            &__vp{
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                max-height: 350px;
+                background-size: cover;
+                background-image: url("../images/madhukar.jpg");
+            }
+
+            &--left{
+                // left: -6px;
+            }
+
+            &--right{
+                right: 0;
+            }
+
+            &__f{
+                background-image: url("../images/pillar.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: contain;
+            }
+        }
+    }
+    /* END: Module Pillars - Desktop */
+}
+
+@mixin mod-pillars-tablet(){
+    /* START: Module Pillars - Tablet */
+    .pillars__container{
+        padding: 10px;
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+    .pillars__bgImage--left{
+        left: 0;
+    }
+    .pillars__bgImage__vp{
+        background-size: cover;
+    }
+    .content--section--desc:last-child{
+        padding-left: 0;
+    }
+    .content--section--desc:first-child{
+        padding-right: 0;
+    }
+    .content--section--desc{
+        width: 100%;
+        display: block;
+    }
+    /* END: Module Pillars - Tablet */
+}
+
+@mixin mod-pillars-mobile(){
+    /* START: Module Pillars - Mobile */
+    .pillars{
+        &__container{
+            padding: 0;
+            padding-top: 80px;
+        }
+        &__heading{
+        }
+        &__wrapper{
+            display: block;
+            padding: 0;
+
+            &:not(:first-child){
+                //margin-top: 70px;
+            }
+        }
+        &__content{
+            padding: 15px;
+            // display: inline-block;
+            width: 100%;
+
+            &__heading{
+            }
+            &__desc{
+            }
+        }
+        &__bgImage{
+            width: 100%;
+            height: 300px;
+
+            &__founder{
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: cover;
+                background-image: url("../images/sreeram.jpg");
+            }
+
+            &__vp{
+                background-position: top;
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: cover;
+                background-image: url("../images/madhukar.jpg");
+            }
+
+            &--left{
+                left: 0;
+            }
+
+            &--right{
+                right: 0;
+                margin-bottom: 30px;
+            }
+
+            &__f{
+                background-image: url("../images/pillar.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                background-size: contain;
+            }
+        }
+    }
+    /* END: Module Pillars - Mobile */
+}

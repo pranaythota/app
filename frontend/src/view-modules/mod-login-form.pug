@@ -1,0 +1,19 @@
+mixin mod-login-form()
+    .section-container.section-container--fixed
+        .login-form__container
+            .login-form__wrapper
+                .login-form__wrapper--logo
+                    a(href="home.html" title="Aasya Foundation | Home"): img.login-form__wrapper--logo__image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+                form#login-form(method="POST" action="")
+                    fieldset
+                        legend.form-name
+                        .form-group
+                            label.form-group__label(for="userName") Username
+                                span.form-group__label--required *
+                            input.form-group__input(type="text" name="userName" id="userName" placeholder="Enter Your Username" required minlength=5 maxlength=30)
+                        .form-group
+                            label.form-group__label(for="password") Password
+                                span.form-group__label--required *
+                            input.form-group__input(type="password" name="password" id="password" placeholder="Enter Your Password" required minlength=5 maxlength=30)
+                        .form-group__action-items
+                            button.af-btn.af-btn--default(type="submit") Login

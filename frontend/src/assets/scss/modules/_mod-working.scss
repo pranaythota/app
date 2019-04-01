@@ -1,0 +1,53 @@
+@mixin mod-working(){
+    /*START: Module - Working - Desktop */
+    .maintanance{
+        &__banner{
+            background-image: url('../images/oldagehome-banner.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: calc(100vh - 95px);
+        }
+        &__alert{
+            &__wrapper{
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.4);
+                display: flex;
+                align-items: center;
+            }
+            &__content{
+                width: auto;
+                width: 350px;
+                text-align: center;
+                padding: 40px 30px;
+                background-color: rgba($color: #fff, $alpha: 0.6);
+                margin: 0 auto;
+                color: #000;
+                text-transform: uppercase;
+            }
+        }
+    }
+    /*END: Module - Working - Desktop */
+}
+
+@mixin mod-working-tablet(){
+    /*START: Module - Working - Tablet */
+    
+    /*END: Module - Working - Tablet */
+}
+
+@mixin mod-working-mobile(){
+    /*START: Module - Working - Mobile */
+    .maintanance{
+        &__banner{
+            height: calc(100vh - 150px);
+        }
+        &__alert{
+            &__wrapper{
+            }
+            &__content{
+            }
+        }
+    }
+    /*END: Module - Working - Mobile */
+}

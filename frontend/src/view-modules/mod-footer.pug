@@ -1,0 +1,35 @@
+mixin mod-footer(footerLegalItems, isSticky)
+    //START: Footer Module
+    footer(class= (isSticky ? "footer--sticky" : ""))
+        .section-container.section-container--fixed
+            //- .footer--items
+            //-     .footer--items--left.hidden-xs
+            //-         h4.footer--items--heading Registered Office
+            //-         p.footer--items--content 
+            //-             | Aasya Foundation
+            //-             br
+            //-             | 16, Dr. A S Rao Nagar Road, Maruthi Arcade
+            //-             br
+            //-             | Swamik Nagar, A S Rao Nagar
+            //-             br
+            //-             | Secunderabad, Telangana 500062
+            //-             br
+            //-             | Email: 
+            //-             a(href="mailto:aasyafoundation@gmail.com") aasyafoundation@gmail.com
+            //-     .footer--items--right
+                    h4.footer--items--heading We are Social
+                    ul.footer--social-icons
+                        li: a(href="javascript:void(0)" title="twitter" class="icon-twitter")
+                        li: a(href="javascript:void(0)" title="facebook" class="icon-fb")
+                        li: a(href="javascript:void(0)" title="youtube" class="icon-youtube")
+                        li: a(href="javascript:void(0)" title="mail" class="icon-mail2")
+                        li: a(href="javascript:void(0)" title="twitter" class="icon-twitter")
+                        li: a(href="javascript:void(0)" title="facebook" class="icon-fb")
+            //- hr
+            .footer--legal-links
+                ul.footer--legal-items
+                    each footerItem in footerLegalItems
+                        li: a(href= footerItem.url, title= footerItem.item) !{footerItem.item}
+                hr
+                p.footer--legal-notes &copy; Copyrights 2018 Aasya Foundation All Rights Reserved.  
+    //END: Footer Module

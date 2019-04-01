@@ -1,0 +1,10 @@
+mixin mod-board-members(board_member)
+    // START: Module - Board Members
+    .section-container.section-container--fluid.bg--white
+        .brdmembers__wrapper
+            h2.brdmembers__heading Board Members
+            .brdmembers__card
+                each member in board_member
+                    //- .brdmembers__card__wrapper    
+                    +mod-member-card(member)
+    // END: Module - Board Members

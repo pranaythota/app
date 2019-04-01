@@ -1,0 +1,285 @@
+@mixin mod-reg-form(){
+    /*START: Module - Registration Form - Desktop*/
+    .reg-form{
+
+        &--heading{
+            @include rem-fallback(font-size, 18);
+            @include rem-fallback(line-height, 21);
+            @include rem-fallback(letter-spacing, 0.8);
+            text-align: left;
+            margin-bottom: 25px;
+            text-decoration: underline;
+        }
+
+        &--wrapper{
+            background-color: rgba(153, 153, 153, 0.2);
+            width: 100%;
+            padding: 60px 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            color: $black;
+            font-size: 0;
+            min-height: 100vh;
+
+            form{
+                margin-top: 50px;
+
+                .hidden{
+                    display: none !important;
+                }
+
+                fieldset{
+                    text-align: center;
+                    border-width: 0;
+
+                    legend{
+                        @include rem-fallback(font-size, 24);
+                        @include rem-fallback(line-height, 28);
+                        @include rem-fallback(letter-spacing, 0.8);
+                        margin-bottom: 30px;
+                        font-weight: bold;
+                    }
+                }
+
+                .form-group{
+                    font-size: 0;
+                    display: inline-block;
+                    width: 50%;
+                    text-align: left;
+                    margin-bottom: 25px;
+
+                    &.form-group--fluid{
+                        width: 100%;
+                    }
+
+                    &.has-padding{
+
+                        &--right{
+                            padding-right: 15px;
+                        }
+
+                        &--left{
+                            padding-left: 15px;
+                        }
+                    }
+
+                    &--label{
+                        width: 125px;
+                        display: inline-block;
+                        @include rem-fallback(font-size, 16);
+                        @include rem-fallback(line-height, 19);
+                        vertical-align: middle;
+
+                        &--right{
+                            width: auto;
+                        }
+
+                        &.align--top{
+                            vertical-align: top;
+                        }
+                    }
+
+                    &--help-msg{
+                        font-size: 12px;
+                        float: left;
+                        color: #333;
+                        margin-top: 8px;
+                        margin-right: 10px;
+                    }
+
+                    &--input{
+                        @include rem-fallback(font-size, 15);
+                        @include rem-fallback(line-height, 18);
+                        width: calc(100% - 135px);
+                        display: inline-block;
+                        padding: 8px 15px;
+                        // height: 35px;
+                        border: 1px solid #999;
+                        vertical-align: middle;
+                        border-radius: 3px;
+
+                        &--left{
+                            width: 50px;
+                        }
+
+                        &.height--auto{
+                            height: auto;
+                        }
+                    }
+                }
+
+                select{
+                    // color:#ccc;
+
+                    option{
+                        color: #000;
+                    }
+
+                    option[disabled]{
+                        color: #ccc;
+                    }
+                }
+            }
+        }
+
+        &--desc{
+            @include rem-fallback(font-size, 16);
+            @include rem-fallback(line-height, 21);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &--logo{
+            
+            &--wrapper{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            &--image{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+    /*END: Module - Registration Form - Desktop*/
+}
+
+@mixin mod-reg-form-tablet(){
+    /*START: Module - Registration Form - Tablet*/
+    .reg-form{
+
+        &--wrapper{
+            padding: 30px 25px;
+            max-width: 900px;
+
+            form{
+                fieldset{
+                    legend{
+                    }
+                }
+
+                .form-group{
+                    &.form-group--fluid{
+                    }
+
+                    &.has-padding{
+                        &--right{
+                        }
+                        &--left{
+                        }
+                    }
+
+                    &--label{
+                        &.align--top{
+                        }
+                    }
+
+                    &--input{
+                        &.height--auto{
+                        }
+                    }
+                }
+            }
+        }
+
+        &--desc{
+            @include rem-fallback(font-size, 16);
+            @include rem-fallback(line-height, 21);
+            text-align: center;
+            margin-bottom: 60px;
+        }
+    }
+    /*END: Module - Registration Form - Tablet*/
+}
+
+@mixin mod-reg-form-mobile(){
+    /*START: Module - Registration Form - Mobile*/
+    .reg-form{
+
+        &--wrapper{
+            padding: 20px;
+            margin: 0 -20px;
+            width: auto;
+
+            form{
+                margin-top: 30px;
+
+                fieldset{
+                    legend{
+                        @include rem-fallback(font-size, 20);
+                        @include rem-fallback(line-height, 24);
+                        @include rem-fallback(letter-spacing, 0.8);
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .form-group{
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 25px;
+
+                    &.form-group--fluid{
+                        width: 100%;
+                    }
+
+                    &.has-padding{
+
+                        &--right{
+                            padding-right: 0;
+                        }
+
+                        &--left{
+                            padding-left: 0;
+                        }
+                    }
+
+                    &--label{
+                        width: auto;
+                        display: block;
+                        @include rem-fallback(font-size, 15);
+                        @include rem-fallback(line-height, 18);
+                        margin-bottom: 12px;
+
+                        &.align--top{
+                            vertical-align: top;
+                        }
+                    }
+
+                    &--input{
+                        width: 100%;
+                        display: block;
+                        padding: 6px 10px;
+                        height: 35px;
+                        border-radius: 5px;
+
+                        &.height--auto{
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--logo{
+            
+            &--wrapper{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            &--image{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &--desc{
+            @include rem-fallback(font-size, 14);
+            @include rem-fallback(line-height, 20);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+    /*END: Module - Registration Form - Mobile*/
+}

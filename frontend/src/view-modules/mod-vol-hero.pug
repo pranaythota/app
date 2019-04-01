@@ -1,0 +1,26 @@
+mixin mod-vol-hero(volSpeaks)
+    //START: Module Volunteer Speaks Hero
+    .section-container--fluid
+        .vol-speak__hero.bg--blue
+            .vol-speak__hero__overlay
+    //END: Module Volunteer Speaks Hero
+    //START: Module Volunteer speaks banner Image Wrapper
+    .section-container.section-container--fixed
+        .vol-speak__hero__image__wrapper.hidden-xs
+            .vol-speak__hero__image__border
+    //END: Module Volunteer speaks banner Image Wrapper
+
+    //START: Module Voluteer Speaks Content
+    .section-container.section-container--fixed
+        .vol-speak__wrapper
+            h2.vol-speak__heading.wow.fadeInDown Volunteer Speaks
+            .vol-speak__items
+                each speak in volSpeaks
+                    .vol-speak__item.wow.fadeInUp
+                        each para in speak.desc
+                            p.vol-speak--items--desc &quot;#{para}&quot;
+                        strong.vol-speak--items--desc--tag-line - #{speak.name}, 
+                            br 
+                            |#{speak.place}
+
+    //END: Module Voluteer Speaks Content

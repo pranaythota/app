@@ -1,0 +1,15 @@
+mixin mod-brdmembers-popup(brdMembers)
+    // START: Module Board Members Popup
+    .section-container.section-container--fixed
+        each member in brdMembers
+            .brdmembers__article__container(id= member.id)
+                .brdmembers__article__wrapper
+                    each para in member.desc
+                        p.brdmembers__article__desc &quot;#{para}&quot;
+                    .brdmembers__details__wrapper
+                        .card__inner__bottom__rounded-image(style="background-image:url("+ member.thumbImageUrl +")")
+                        h3.brdmembers__article__author #{member.name}, 
+                            br 
+                            |#{member.position}
+    // END: Module Board Members Popup
+

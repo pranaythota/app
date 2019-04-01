@@ -1,0 +1,246 @@
+@mixin mod-about-hero(){
+    /*START: Module About us Hero : Desktop*/
+    .content {
+        &__wrapper{
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            // margin-top: 170px;
+            padding: 0 50px;
+            padding-top:170px;
+            margin-bottom: 80px;
+
+            &:after{
+                width: 100%;
+                height: 50px;
+                background-color: #000000;
+            }
+
+            &.no__margin-top{
+                margin-top: 20px;
+                display: inline-block;
+            }
+        }
+
+        &--section{
+            font-size: 0;
+            
+            &--desc{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 40px;
+
+                &.content--section--desc--fluid{
+                    width: 100%;
+                    padding: 0 !important;
+                }
+
+                &.align--middle{
+                    vertical-align: middle;
+                }
+
+                &--heading{
+                    @include rem-fallback(font-size, 21);
+                    @include rem-fallback(line-height, 24);
+                    @include rem-fallback(letter-spacing, 0.8);
+                    margin-bottom: 25px;
+                }
+
+                &--info{
+                    @include rem-fallback(font-size, 15);
+                    @include rem-fallback(line-height, 21);
+                    color: #999;
+                    margin-bottom: 10px;
+                }
+
+                &:first-child{
+                    padding-right: 50px;
+                }
+
+                &:last-child{
+                    padding-left: 50px;
+                }
+
+                &--image-wrapper{
+                    width: 100%;
+                    height: 350px;
+                    background-color: #ccc;
+                    background: url('../images/about.jpg') no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+        }
+
+        &--line{
+            position: absolute;
+            background-color: #aaa;
+
+            &--top{
+                &--right{
+                    right: 0;
+                    top: 120px;
+
+                    &.hr--line{
+                        height: 1.5px;
+                        width: 250px;
+                        margin-right: -20px;
+
+                        &--second{
+                            height: 1px;
+                            width: 150px;
+                            margin-top: 10px;
+                            margin-right: 5px;
+                        }
+
+                        &--third{
+                            height: 1px;
+                            width: 80px;
+                            margin-top: 20px;
+                            margin-right: 15px;
+                        }
+                    }
+                    &.vr--line{
+                        width: 1.5px;
+                        height: 350px;
+                        margin-top: -15px;
+
+                        &--second{
+                            width: 1px;
+                            height: 200px;
+                            margin-right: 10px;
+                            margin-top: 5px;
+                        }
+
+                        &--third{
+                            width: 1px;
+                            height: 120px;
+                            margin-right: 18px;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+
+            &--bottom{
+                &--left{
+                    left: 0;
+                    bottom: 0;
+
+                    &.hr--line{
+                        width: 550px;
+                        height: 2px;
+                        margin-left: -25px;
+                        margin-bottom: -15px;
+
+                        &--second{
+                            width: 300px;
+                            height: 1.5px;
+                            margin-left: -15px;
+                            margin-bottom: -5px;
+                        }
+
+                        &--third{
+                            width: 180px;
+                            height: 1px;
+                            margin-left: -5px;
+                            margin-bottom: 5px;
+                        }
+                    }
+
+                    &.vr--line{
+                        width: 2px;
+                        height: 480px;
+                        margin-bottom: -20px;
+                        margin-left: -22px;
+
+                        &--second{
+                            height: 350px;
+                            width: 1px;
+                            margin-bottom: -10px;
+                            margin-left: -10px;
+                        }
+
+                        &--third{
+                            height: 280px;
+                            width: 1px;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    /*END: Module About us Hero : Desktop*/
+}
+
+@mixin mod-about-hero-tablet(){
+    /*START: Module About us Hero : Tablet*/
+    
+    /*END: Module About us Hero : Tablet*/
+}
+
+@mixin mod-about-hero-mobile(){
+    /*START: Module About us Hero : Mobile*/
+    .content {
+        &__wrapper{
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            padding-top: 120px;
+            margin-bottom: 50px;
+        }
+
+        &--section{
+            
+            &--desc{
+                width: 100%;
+                display: block;
+                margin-bottom: 30px;
+
+                &.content--section--desc--fluid{
+                    width: 100%;
+                    padding: 0 !important;
+                }
+
+                // &.align--middle{
+                //     vertical-align: middle;
+                // }
+
+                &--heading{
+                    @include rem-fallback(font-size, 21);
+                    @include rem-fallback(line-height, 24);
+                    @include rem-fallback(letter-spacing, 0.8);
+                    margin-bottom: 20px;
+                }
+
+                &--info{
+                    @include rem-fallback(font-size, 15);
+                    @include rem-fallback(line-height, 21);
+                    color: #999;
+                    // margin-bottom: 25px;
+                }
+
+                &:first-child{
+                    padding-right: 0;
+                }
+
+                &:last-child{
+                    padding-left: 0;
+                }
+
+                &--image-wrapper{
+                    width: 100%;
+                    height: 200px;
+                    background-color: #ccc;
+                }
+            }
+
+        }
+    }
+    /*END: Module About us Hero : Mobile*/
+}

@@ -1,0 +1,81 @@
+@mixin mod-invest-snapshot(){
+    //START: Module - Invest Snapshot - Desktop
+    .invest-snapshot{
+        &--overlay{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+        }
+
+        &--container{
+            padding: 40px 0;
+            // margin-bottom: 40px;
+            height: 300px;
+            background-image: url('../images/invest.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        &--wrapper{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--action-container{
+            text-align: center;
+        }
+
+        &--heading{
+            @include rem-fallback(font-size, 25);
+            @include rem-fallback(line-height, 28);
+            @include rem-fallback(letter-spacing, 1);
+            margin-bottom: 25px;
+        }
+    }
+    //END: Module - Invest Snapshot - Desktop
+}
+
+@mixin mod-invest-snapshot-tablet(){
+    //START: Module - Invest Snapshot - Tablet
+    //END: Module - Invest Snapshot - Tablet
+}
+
+@mixin mod-invest-snapshot-mobile(){
+    //START: Module - Invest Snapshot - Mobile
+    .invest-snapshot{
+        &--overlay{
+            
+        }
+
+        &--container{
+            margin-bottom: 30px;
+            height: 200px;
+            background-image: url('../images/invest.jpg');
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        &--wrapper{
+            width: 100%;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        &--action-container{
+            
+        }
+
+        &--heading{
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            margin-bottom: 20px;
+        }
+    }
+    //END: Module - Invest Snapshot - Mobile
+}

@@ -1,0 +1,11 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Admin | Home")
+    body.bg--grey--alpha
+        +mod-social-icons-sticky()
+        +mod-header-admin()
+        +mod-admin-blocks(adminBlocks)
+        +mod-footer(footerItems)
+        +mod-html-scripts()

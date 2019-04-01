@@ -1,0 +1,16 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("About Us")
+    body.bg--grey--alpha
+        +mod-social-icons-sticky()
+        +mod-header(navItems,1)
+        +mod-about-hero()
+        +mod-longterm-plan()
+        +mod-pillars()
+        +mod-board-members(brdmembers)
+        //- +mod-themes()
+        +mod-footer(footerItems)
+        +mod-brdmembers-popup(brdmembers)
+        +mod-html-scripts()

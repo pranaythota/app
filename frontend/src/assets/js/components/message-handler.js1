@@ -1,0 +1,178 @@
+;(function($){
+    this.messageHandler = function(){
+        this.messageType = {
+            DEFAULT: 0,
+            ERROR: 1,
+            WARNING: 2,
+            SUCCESS: 3
+        };
+
+        this.buttonType = {
+            ACTION: 0,
+            DISMISS: 1
+        }
+
+        this.markup = {
+            messageModalMarkup : 
+                '<div class="modal fade __MESSAGE_MODAL_CLASS__" id="__MESSAGE_MODAL_ID__" role="dialog" tabindex="-1">' + 
+                    '<div class="modal-dialog" role="document">' + 
+                        '<div class="modal-content">' + 
+                            '<div class="modal-header">' + 
+                                '<h5 class="modal-title">__MESSAGE_TITLE__</h5>' + 
+                                '<button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>' + 
+                            '</div>' + 
+                            '<div class="modal-body">__MESSAGE_BODY__</div>' + 
+                            '__MESSAGE_FOOTER__' + 
+                        '</div>' + 
+                    '</div>' + 
+                '</div>',
+            messageModalFooter : '<div class="modal-footer">__MESSAGE_FOOTER_CONTENTS__</div>',
+            messageModalButtonDismiss :
+                '<button class="btn btn-fs btn-fs-small __BUTTON_CLASS__-outline" data-dismiss="modal" type="button">__BUTTON_TEXT__</button>',
+            messageModalButtonAction :
+                '<button class="btn btn-fs btn-fs-small __BUTTON_CLASS__" type="button" id="__BUTTON_ID__">__BUTTON_TEXT__</button>'
+        };
+
+        this.defaultData = {
+            title: 'Alert',
+            message: '',
+            messageType: this.messageType.DEFAULT,
+            footer: {
+                show: true,
+                buttons: [
+                    {
+                        type: this.buttonType.DISMISS,
+                        text: 'Ok'
+                    }
+                ]
+            },
+            modalID: 'mdl-message-handler'
+        }
+
+        this.extendDefaults = function(source, properties){
+            var property;
+
+            for (property in properties) {
+                if (properties.hasOwnProperty(property)) {
+                    source[property] = properties[property];
+                }
+            }
+
+            return source;
+        }
+
+        //This guid is RFC4122 version 4 compliant
+        this.guid = function uuidv4(){
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
+                var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+    }
+
+    messageHandler.prototype.init = function(){
+    }
+
+    messageHandler.prototype.showMessage = function(data){
+        if(data && typeof(data) == 'object'){
+            data = this.extendDefaults(this.defaultData, data);
+        }else{
+            data = this.defaultData;
+        }
+
+        if($('#' + data.modalID).hasClass('show')){
+            console.log('Message modal already open. Cannot open a new one.');
+        }else{
+            var msgMdlClass = '';
+            var footerBtnClass = '';
+            var mdlMarkup = '';
+            var arrActionButtonsCallbacks = [];
+            var bsModalObj = null;
+
+            switch(data.messageType){
+                case this.messageType.DEFAULT:
+                    msgMdlClass = '';
+                    footerBtnClass = 'btn-fs-default'
+                    break;
+                case this.messageType.ERROR:
+                    msgMdlClass = 'modal-danger';
+                    footerBtnClass = 'btn-fs-danger'
+                    break;
+                case this.messageType.WARNING:
+                    msgMdlClass = 'modal-warning';
+                    footerBtnClass = 'btn-fs-warning'
+                    break;
+                case this.messageType.SUCCESS:
+                    msgMdlClass = 'modal-success';
+                    footerBtnClass = 'btn-fs-success'
+                    break;
+                default:
+                    msgMdlClass = '';
+                    footerBtnClass = 'btn-fs-default'
+                    break;
+            }
+    
+            mdlMarkup = this.markup.messageModalMarkup
+                .replace(/__MESSAGE_MODAL_CLASS__/g, msgMdlClass)
+                .replace(/__MESSAGE_MODAL_ID__/g, data.modalID)
+                .replace(/__MESSAGE_TITLE__/g, data.title)
+                .replace(/__MESSAGE_BODY__/g, data.message)
+                .replace(/__MESSAGE_FOOTER__/g, data.footer.show ? this.markup.messageModalFooter : '');
+            
+            if(data.footer.show){
+                var footerContents = '';
+                var self = this;
+
+                data.footer.buttons.forEach(function(button, i){
+                    if(button.type == self.buttonType.ACTION){
+                        var buttonInfo = {};
+
+                        if(button.callback){
+                            buttonInfo.buttonID = "btn-action-" + self.guid();
+                            buttonInfo.callback = button.callback;
+                            arrActionButtonsCallbacks.push(buttonInfo);
+                        }
+
+                        footerContents += self.markup.messageModalButtonAction
+                            .replace(/__BUTTON_CLASS__/g, footerBtnClass)
+                            .replace(/__BUTTON_ID__/g, buttonInfo.buttonID)
+                            .replace(/__BUTTON_TEXT__/g, button.text);
+                    }else if(button.type == self.buttonType.DISMISS){
+                        footerContents += self.markup.messageModalButtonDismiss
+                            .replace(/__BUTTON_CLASS__/g, footerBtnClass)
+                            .replace(/__BUTTON_TEXT__/g, button.text);
+                    }
+                });
+
+                mdlMarkup = mdlMarkup.replace(/__MESSAGE_FOOTER_CONTENTS__/g, footerContents);
+            }
+    
+            $('body').append(mdlMarkup);
+
+            $('#' + data.modalID).on('hidden.bs.modal', function(){
+                $('#' + data.modalID).modal('dispose').remove();
+            })
+            
+            bsModalObj = $('#' + data.modalID).modal('show');
+    
+            //Attach events to action buttons
+            arrActionButtonsCallbacks.forEach(function(buttonInfo, i){
+                $('#' + buttonInfo.buttonID).on('click', function(){
+                    self.hideMessage(bsModalObj, buttonInfo.callback);
+                });
+            });
+
+            return bsModalObj;
+        }
+    }
+
+    messageHandler.prototype.hideMessage = function(modalObject, callback){
+        modalObject.on('hidden.bs.modal', function(){
+            modalObject.modal('dispose').remove();
+
+            if(callback)
+                callback();
+        });
+        modalObject.modal('hide');
+    }
+}(jQuery));

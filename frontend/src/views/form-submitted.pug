@@ -1,0 +1,16 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Form Submitted")
+    body.bg--grey--alpha
+        +mod-social-icons-sticky()
+        +mod-header(navItems)
+        .section-container.section-container--fixed
+            .form__submit__message__wrapper
+                .form__submit__message__inner
+                    h2.form__submit__message__heading Thanks for Registering with us. Your Details has been Submitted
+                    p.form__submit__message__desc Please check your mail to confirm
+                    a(href="javascript:void(0)").form__submit__registernew__link Register New Volunteer
+        +mod-footer(footerItems, true)
+        +mod-html-scripts()

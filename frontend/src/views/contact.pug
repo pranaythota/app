@@ -1,0 +1,13 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Contact Us")
+    body
+        +mod-social-icons-sticky()
+        +mod-header(navItems,3)
+        +mod-contact-hero()
+        +mod-contact-hero-image()
+        +mod-contact-content(cityDetails)
+        +mod-footer(footerItems)
+        +mod-html-scripts(true)

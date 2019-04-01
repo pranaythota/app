@@ -1,0 +1,36 @@
+mixin mod-header-admin()
+    // START: Module Admin Header
+    header
+        .section-container.section-container--fixed
+            .header--items 
+                .header--items--left
+                    .header-logo-wrapper
+                        a(href="home.html" title="Aasya Foundation").header-logo
+                .header--items--center
+                    span.header--title Aasya Admin Portal
+                .header--items--right
+                    ul.header--nav-items.hidden-xs
+                        li: a.user__section(href="javascript:void(0)" title="user") 
+                                span.user__name Aasya Bangalore
+                                span.user__icon
+                        li: a(href="javascript:void(0)" title="Logout") 
+                                span.logout__name Logout
+                                span.logout__icon
+                    .header--items--right--device-menu
+                        a(href="javascript:void(0)", title="Menu", class="device-menu")
+                            span.hamburger-icon
+                                span.line.line-1
+                                span.line.line-2
+                                span.line.line-3
+    .header--nav-items--device.visible-xs
+        .header--nav-items--device--close &times;
+        ul.header--nav-items
+                    li: a.user__section(href="javascript:void(0)" title="user") 
+                            span.user__name Aasya Bangalore
+                            span.user__icon
+                    li: a(href="javascript:void(0)" title="Logout")
+                            span.logout__name Logout
+                            span.logout__icon
+    .header--nav-items--device--overlay
+    // END: Module Admin Header
+    

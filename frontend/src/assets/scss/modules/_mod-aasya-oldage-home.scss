@@ -1,0 +1,166 @@
+@mixin mod-aasya-oldage-home(){
+    /* START: Module Oldage Home - Desktop */
+    .oldage-home{
+        &__banner{
+            width: 100%;
+            height: 100vh;
+            min-height: 560px;
+            background-image: url('../images/oldagehome-banner.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+
+            &__heading{
+                @include rem-fallback(font-size, 40);
+                line-height: normal;
+                margin-bottom: 25px;
+            }
+
+            &__desc{
+                @include rem-fallback(font-size, 25);
+                line-height: 1.8;
+                letter-spacing: 2.4px;
+            }
+
+            &__images__wrapper{
+                font-size: 0;
+                height: 300px;
+            }
+
+            &__content{
+                width: 700px;
+                margin-left: auto;
+                padding: 40px 30px;
+                background-color: rgba(0,0,0,0.4);
+                font-family: 'Quintessential', cursive;
+                margin-right: 50px;
+            }
+
+            &__image{
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 24%;
+                margin: 0 0.5%;
+                height: 100%;
+                display: inline-block;
+                border: 2px solid #fff;
+                background-position: center;
+                vertical-align: top;
+
+                &.image--0{
+                    margin-top: -70px;
+                }
+
+                &.image--1{
+                    margin-top: -30px;
+                }
+
+                &.image--2{
+                    margin-top: -120px;
+                }
+
+                &.image--3{
+                    margin-top: -80px;
+                }
+            }
+        }
+    }
+    /* END: Module Oldage Home - Desktop */
+}
+
+@mixin mod-aasya-oldage-home-tablet(){
+    /* START: Module Oldage Home - Tablet */
+    .oldage-home{
+        &__banner{
+            &__heading{
+                @include rem-fallback(font-size, 36);
+            }
+
+            &__desc{
+                @include rem-fallback(font-size, 21);
+                line-height: 1.6;
+            }
+
+            &__images__wrapper{
+                font-size: 0;
+                height: 250px;
+            }
+
+            &__content{
+                width: 700px;
+                margin-left: auto;
+                padding: 40px 30px;
+                background-color: rgba(0,0,0,0.4);
+                font-family: 'Quintessential', cursive;
+                margin-right: auto;
+            }
+
+            &__image{
+                &.image--0{
+                }
+
+                &.image--1{
+                }
+
+                &.image--2{
+                }
+
+                &.image--3{
+                }
+            }
+        }
+    }
+    /* END: Module Oldage Home - Tablet */
+}
+
+@mixin mod-aasya-oldage-home-mobile(){
+    /* START: Module Oldage Home - Mobile */
+    .oldage-home{
+        &__banner{
+            align-items: flex-end;
+            padding-bottom: 100px;
+            min-height: 480px;
+            background-position: -250px bottom;
+
+            &__heading{
+                @include rem-fallback(font-size, 32);
+                margin-bottom: 20px;
+            }
+
+            &__desc{
+                @include rem-fallback(font-size, 18);
+                line-height: 1.6;
+                letter-spacing: 2.4px;
+            }
+
+            &__images__wrapper{
+                height: 120px;
+            }
+
+            &__content{
+                margin-right: auto;
+            }
+
+            &__image{
+
+                &.image--0{
+                    margin-top: -50px;
+                }
+
+                &.image--1{
+                    margin-top: -30px;
+                }
+
+                &.image--2{
+                    margin-top: -80px;
+                }
+
+                &.image--3{
+                    margin-top: -60px;
+                }
+            }
+        }
+    }
+    /* END: Module Oldage Home - Mobile */
+}

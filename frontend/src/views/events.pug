@@ -1,0 +1,13 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("Events")
+    body.bg--grey--alpha
+        +mod-social-icons-sticky()
+        +mod-header(navItems,"2")
+        //- +mod-working()
+        +mod-events()
+        //- +mod-events-content()
+        +mod-footer(footerItems)
+        +mod-html-scripts()

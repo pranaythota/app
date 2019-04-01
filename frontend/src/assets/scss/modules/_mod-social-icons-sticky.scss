@@ -1,0 +1,94 @@
+@mixin mod-social-icons-sticky(){
+    /*START: Module - Social icons sticky - Desktop*/
+    .social-icons{
+        &--container{
+            &--fixed{
+                position: fixed;
+                right: 0;
+                top: 50%;
+                z-index: 9999;
+                // transform: translate( 0, -50% );
+                @include prefix(transform, translate( 0, -50% ));
+            }
+        }
+
+        &--list{            
+            &--item{
+                @include rem-fallback(font-size, 16);
+                @include prefix(transform, translateX(200px));
+                border: 1px solid #555;
+                background-color: #333;
+                margin-bottom: 10px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                height: 40px;
+                display: block;
+                white-space: nowrap;
+                line-height: 40px;
+                transition: transform 400ms ease-in-out;
+                padding-right: 15px;
+                overflow: hidden;
+
+                &:hover{
+                    @include prefix(transform, translateX(0px));
+                    transition: transform 400ms ease-in-out;
+                }
+
+                li{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    /*END: Module - Social icons sticky - Desktop*/
+}
+
+@mixin mod-social-icons-sticky-tablet(){
+    /*START: Module - Social icons sticky - Tablet*/
+    .social-icons{
+        &--container{
+        }
+
+        &--list{            
+            &--item{
+                width: 40px;                
+                @include prefix(transform, translateX(0px));
+
+                &:hover{
+                    
+                }
+
+                li{
+
+                }
+            }
+        }
+    }
+    /*END: Module - Social icons sticky - Tablet*/
+}
+
+@mixin mod-social-icons-sticky-mobile(){
+    /*START: Module - Social icons sticky - Mobile*/
+    .social-icons{
+        &--container{
+            &--fixed{
+            }
+        }
+
+        &--list{            
+            &--item{
+                width: 40px;
+                @include prefix(transform, translateX(0px));
+
+                &:hover{
+
+                }
+
+                li{
+
+                }
+            }
+        }
+    }
+    /*END: Module - Social icons sticky - Mobile*/
+}

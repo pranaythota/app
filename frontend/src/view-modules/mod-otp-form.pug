@@ -1,0 +1,14 @@
+mixin mod-otp-form()
+    .section-container.section-container--fixed
+        .reg-form--wrapper
+            .reg-form--logo--wrapper
+                a(href="01.01-Homepage.html" title="Aasya Foundation | Home"): img.reg-form--logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+            p.reg-form--desc OTP has been sent to your E-Mail.
+            //- p.reg-form--desc Enter Your OTP below.
+            form(action="" method="post" id="")
+                fieldset
+                    .form-group
+                        label.form-group--label(for="otp") Enter OTP:
+                        input.form-group--input(name="otp" type="password" id="otp" required)
+                    .reg-form--action-items
+                        input(type="submit" value="Submit" title="Submit Your Details").af-btn.af-btn--black-border

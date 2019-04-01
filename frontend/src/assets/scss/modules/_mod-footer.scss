@@ -1,0 +1,251 @@
+@mixin mod-footer(){
+    /*START: Footer Module - Desktop*/
+    footer{
+        background-color:$theme;
+        padding: 20px 0;
+        width: 100%;
+        color: $white;
+
+        hr{
+            margin: 10px 0;
+            background-color: $white;
+        }
+    }
+    .footer{
+        &--items{
+            font-size: 0;
+
+            &--heading{
+                @include rem-fallback(font-size, 22);
+                @include rem-fallback(letter-spacing, 0.8);
+                @include rem-fallback(line-height, 22);
+                margin-bottom: 20px;
+            }
+
+            > div{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+
+                &:first-child{
+                    padding-right: 20px;
+                }
+                &:last-child{
+                    padding-left: 20px;
+                }
+            }
+
+            &--left{
+
+            }
+
+            &--content{
+                @include rem-fallback(font-size, 14);
+                @include rem-fallback(letter-spacing, 0.8);
+                @include rem-fallback(line-height, 22);
+            }
+
+            &--right{
+                .footer--social-icons{
+
+                    li{
+                        display: inline-block;
+
+                        &:not(:first-child){
+                            margin-left: 15px;
+                        }
+                        
+                        a{
+                            @include rem-fallback(font-size, 20);
+                            @include display-flex();
+                            justify-content: center;
+                            align-items: center;
+                            // border: 2px solid #fff;
+                            // border-radius: 50%;
+                            width: 35px;
+                            height: 35px;
+                            
+                            &:hover{
+                                background-color: #ffffff;
+                                color: $theme;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--legal-links{
+            text-align: center;
+        }
+        &--legal-items{
+            // margin: 10px 0;
+
+            li{
+                display: inline-block;
+                @include rem-fallback(font-size, 14);
+                @include rem-fallback(letter-spacing, 0.8);
+                @include rem-fallback(line-height, 16);
+
+                &:not(:first-child){
+                    margin-left: 30px;
+                }
+
+                a{
+                    &:hover{
+                        text-decoration: underline;
+                        transition: all 500ms ease-in-out;
+                    }
+                }
+            }
+        }
+        &--legal-notes{
+            @include rem-fallback(font-size, 12);
+            @include rem-fallback(letter-spacing, 0.8);
+            @include rem-fallback(line-height, 15);
+        }
+        &--sticky{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    /*END: Footer Module - Desktop*/
+}
+
+@mixin mod-footer-tablet(){
+    /*START: Footer Module - Tablet*/
+    .footer{
+        &--items{
+            &--heading{
+
+            }
+
+            > div{
+
+            }
+
+            &--left{
+
+            }
+
+            &--content{
+                
+            }
+            &--right{
+                .footer--social-icons{
+
+                    li{
+                       
+
+                        &:not(:first-child){
+                            
+                        }
+                        
+                        a{
+                            
+                            
+                            &:hover{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--legal-links{
+            
+        }
+        &--legal-items{
+            
+
+            li{
+                
+
+                &:not(:first-child){
+                   
+                }
+            }
+        }
+        &--legal-notes{
+            
+        }
+    }
+    /*END: Footer Module - Tablet*/
+}
+
+@mixin mod-footer-mobile(){
+    /*START: Footer Module - Mobile*/
+    .footer{
+        &--sticky{
+            position: static;
+            bottom: inherit;
+        }
+        &--items{
+            text-align: center;
+
+            &--heading{
+
+            }
+
+            > div{
+                width: 100%;
+
+                &:first-child{
+                    padding-right: 0;
+                }
+                &:last-child{
+                    padding-left: 0;
+                }
+            }
+
+            &--left{
+
+            }
+
+            &--content{
+                
+            }
+            &--right{
+                .footer--social-icons{
+
+                    li{
+                       
+
+                        &:not(:first-child){
+                            
+                        }
+                        
+                        a{
+                            @include rem-fallback(font-size, 18);
+                            width: 32px;
+                            height: 32px;
+                            
+                            &:hover{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--legal-links{
+            
+        }
+        &--legal-items{
+            
+
+            li{
+                @include rem-fallback(letter-spacing, 0.8);
+                @include rem-fallback(line-height, 22);
+                padding: 3px 0;
+
+                &:not(:first-child){
+                   margin-left: 15px;
+                }
+            }
+        }
+        &--legal-notes{
+            @include rem-fallback(line-height, 20);
+        }
+    }
+    /*END: Footer Module - Mobile*/
+}

@@ -1,0 +1,123 @@
+mixin mod-reg-form()
+    .section-container.section-container--fixed
+        .event-reg-form__container
+            .event-reg-form__wrapper
+                .event-reg-form__name Registration Form
+                .event-reg-form__logo--wrapper
+                    a(href="home.html" title="Aasya Foundation | Home"): img.event-reg-form__logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+                p.event-reg-form__desc "Life is meant to live through experiences. We need to live in the moment, not just to survive."
+                p.event-reg-form__desc "The real joy in life is not we get But in what we give.The joy of giving, the joy of feeding and the joy of helping others makes you complete being."
+                p.event-reg-form__desc Aasya wants you to be a part of this Wonderful experience.Become a member of aasya and together we can support others through their greatest hardships.
+                p.event-reg-form__desc Be an agent of 
+                    strong CHANGE - 
+                    | Be A Volunteer of 
+                    strong AASYA &amp; RISE AGAIN
+                p.event-reg-form__desc Fill the membership form below to be a part of Our Family.
+                form(id="reg-form")
+                    fieldset                       
+                        .form-group.form-group--inline
+                            label.form-group__label(for="firstName") Firstname
+                                span.form-group__label--required *
+                            input.form-group__input(type="text" id="firstName" name="firstName" placeholder="Enter Your First Name" required minlength=3 maxlength=30)
+
+                        .form-group.form-group--inline
+                            label.form-group__label(for="lastName") Lastname
+                                span.form-group__label--required *
+                            input.form-group__input(type="text" id="lastName" name="lastName" placeholder="Enter Your Last Name" required minlength=1 maxlength=30)
+
+                        .form-group.form-group--inline
+                            label.form-group__label(for="dob") DOB
+                                span.form-group__label--required *
+                            input.form-group__input(name="DOB" type="number" id="dob" data-type="picker" placeholder="Pick Your Date of Birth" required)
+
+                        .form-group.form-group--inline
+                            label.form-group__label(for="gender") Gender
+                                span.form-group__label--required *
+                            select.form-group__input(name="gender" id="gender" required)
+                                option(value="") Select your Gender
+                                option(value="male") Male
+                                option(value="female") Female
+                                option(value="other") Other
+                        .form-group
+                            label.form-group__label(for="email") Email
+                                span.form-group__label--required *
+                            input.form-group__input(name="email" type="email" id="email" required placeholder="Enter Your E-Mail")
+
+                        .form-group.form-group--inline
+                            label.form-group__label(for="phoneno") Phone No.
+                                span.form-group__label--required *
+                            input.form-group__input(name="phoneNumber" type="tel" id="phoneno" required minlength=10 maxlength=10 placeholder="Enter Your Phone Number")
+                        .form-group.form-group--inline
+                            label.form-group__label(for="profession") Profession
+                                span.form-group__label--required *
+                            select.form-group__input(name="profession" id="profession" required)
+                                option(value="" ) Select Your Profession
+                                option(value="student") Student
+                                option(value="employee") Employee
+                                option(value="other") Other
+                        .form-group.hidden.clg-field
+                            label.form-group__label(for="college") College
+                                span.form-group__label--required *
+                            select.form-group__input(name="college" type="text" id="college" required)
+                                // College Names will be populated from JSON
+                        .form-group.hidden.other-clg-field
+                            label.form-group__label(for="otherCollege") Enter your College Name
+                                span.form-group__label--required *
+                            input.form-group__input(name="otherCollege" type="text" id="otherCollege" required placeholder="Enter your college name")
+                        .form-group.hidden.emp-field
+                            label.form-group__label(for="company") Company
+                                span.form-group__label--required *
+                            input.form-group__input(name="company" type="text" id="company" required)
+
+                        .form-group.hidden.other-field
+                            label.form-group__label(for="otherPro") Please Specify Profession
+                                span.form-group__label--required *
+                            input.form-group__input(name="otherProfession" type="text" id="otherPro" required)
+
+                        .form-group.form-group--inline
+                            label.form-group__label(for="state") State
+                                span.form-group__label--required *
+                            select.form-group__input(name="state" id="state" required)
+                                option(value="") Select Your State
+                                // States will be populated from JSON
+                        .form-group.form-group--inline
+                            label.form-group__label(for="city") City
+                                span.form-group__label--required *
+                            select.form-group__input(name="city" id="city" required)
+                                option(value="") Select Your city
+                                // Cities will be populated from JSON, based on state selection
+                        .form-group.form-group--inline
+                            label.form-group__label(for="bloodGroup") Blood Group
+                                span.form-group__label--required *
+                            select.form-group__input(name="bloodGroup" id="bloodGroup" required)
+                                option(value="") Select your Blood Group
+                                // Blood Groups Will be populated from JSON
+                        .form-group.form-group--inline
+                            label.form-group__label(for="languages") Languages Known
+                                span.form-group__label--required 
+                            select.form-group__input(name="languages" id="languages" required multiple="multiple")
+                                // Languages will be populated from JSON
+                                
+                        .form-group
+                            label.form-group__label(for="address") Address
+                                span.form-group__label--required *
+                            textarea.form-group__input(name="address" rows="4" cols="20" type="text" id="address" minlength=15 maxlength=100 placeholder="Please Enter Your Address" required)
+                        .form-group
+                            label.form-group__label(for="imageUpload") Upload Your Photo
+                                span.form-group__label--required *
+                            input.form-group__input(name="imageUpload" type="file" id="imageUpload" accept="image/*" required)
+                            span.form-group__help-msg Please upload .jpeg/.png format only. Max size 
+                                strong 800KB
+                        .form-group
+                            label.form-group__label(for="whyAF") Why Do You want to Join 
+                                b Aasya Foundation 
+                                    span.form-group__label--required *
+                            textarea.form-group__input.marginb10(cols="20" rows="10" name="whyAF" type="text" id="whyAF" required minlength=20 maxlength=500 placeholder="Please Mention Here, Why Do you Want to Join in Aasya Foundation")
+                        .form-group
+                            input.form-group__input.form-group__input--left(name="tnc" type="checkbox" id="tnc" required)
+                            label.form-group__label.form-group__label--inline(for="tnc") I accept the  
+                                a(data-fancybox data-src="#terms-popup" href="javascript:void(0)" title="Terms & Conditions").link Terms &amp; Conditions
+                                span.form-group__label--required *
+                        .form-group__action-items
+                                button.af-btn.af-btn--default(type="submit") Submit
+                        

@@ -1,0 +1,13 @@
+mixin mod-generic-highlights(Heading, Data, overlaySide)
+    .section-container.section-container--fixed    
+        .generic-mod--container.swiper-container
+            h2.generic-mod--heading #{Heading}
+            .generic-mod--wrapper.swiper-wrapper
+                each item in Data
+                    .generic-mod--slide.swiper-slide(style="background-image:url(" + item.imageUrl +")")
+                        .generic-mod--slide--content--wrapper(class="generic-mod--slide--content--" + overlaySide)
+                            .generic-mod--slide--content
+                                h2.generic-mod--slide--heading #{item.title}
+                                //- p.generic-mod--slide--desc #{item.desc}
+                                //- .generic-mod--slide--action-items
+                                    button(type="submit").af-btn.af-btn--white-border Read More

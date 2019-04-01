@@ -1,0 +1,35 @@
+mixin mod-projects-events(events)
+    .section-container.section-container--fixed
+        .pro-events--wrapper
+            .pro-events--items-left
+                .eq-col
+                    h2.pro-events--heading Featured Projects
+                    .pro-events--items-left--inner
+                        .pro-events--items-left--inner--image
+                        .pro-events--items-left--inner--title Aasya Oldage Home
+                        p.pro-events--items-left--inner--desc "No love is greater than mother's love, No care is greater than father's care".
+                        p.pro-events--items-left--inner--desc In this domain of infinite emotions, Two irreplaceable emotion's are mother's love and father's care. We cannot payback for their love and care throughout our span of life. Simply,They are beyond the bounds of possibility. 
+                .pro-events--action--items
+                    a(href="aasya-oldage-home.html" title="Learn More about Aasya oldage Home").af-btn.af-btn--black-border Read More
+            .pro-events--items-right
+                .eq-col
+                    h2.pro-events--heading Events
+                    .pro-events--items-right--inner
+                        each event, index in events
+                            .pro-events--items-right--inner--left
+                                .pro-events--items-right--inner--image(style="background-image:url(" + event.url + ")")
+                            .pro-events--items-right--inner--right
+                                .pro-events--items-right--inner--title #{event.title}
+                                .pro-events--items-right--inner--desc #{event.desc}
+                    //- .pro-events--items-right--inner
+                        each event, index in events
+                            if( index < 3)
+                                //- a(href="javascript:void(0)" title= event.title + " " + event.date): .pro-events--items-right--inner--left
+                                .pro-events--items-right--inner--image(data-image-url= event.url) 
+                                //- a(href="javascript:void(0)" title= event.title + " " + event.date): .pro-events--items-right--inner--right
+                                .pro-events--items-right--inner--title #{event.title}
+                                .pro-events--items-right--inner--date #{event.date} - #{event.city}
+                                //- .pro-events--items-right--inner--desc #{event.desc}
+                .pro-events--action--items
+                    //- button(type="submit").af-btn.af-btn--black-border View More
+                    a.af-btn.af-btn--black-border(href="events.html" title="View More Events") View More

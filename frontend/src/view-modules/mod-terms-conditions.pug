@@ -1,0 +1,7 @@
+mixin mod-terms-conditions(terms)
+    .section-container.section-container--fixed
+        .terms__container#terms-popup
+            h2.terms__heading Terms &amp; Conditions
+            ul.terms__items
+                each term in terms
+                    li.terms__item #{term}

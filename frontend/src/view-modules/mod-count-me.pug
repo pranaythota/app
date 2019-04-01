@@ -1,0 +1,17 @@
+mixin mod-count-me(countData)
+    // START: Module - Count Me
+    .section-container--fluid
+        .count__container
+            h2.count__heading Our Reach
+            .count__wrapper
+                each data in countData
+                    .count__card(class="count__card--" + data.category)
+                        .count__card__overlay
+                        .count__card__inner__wrapper
+                            .count__card__inner
+                                h2.count__card__inner__number #{data.count}
+                                .count__card__inner__text #{data.text}
+                                
+
+    // END: Module - Count Me
+    

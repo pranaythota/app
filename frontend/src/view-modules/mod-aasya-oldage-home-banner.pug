@@ -1,0 +1,11 @@
+mixin mod-aasya-oldage-home-banner(images)
+    .section-container--fluid
+        .oldage-home__banner
+            .oldage-home__banner__content
+                .oldage-home__banner__heading Aasya Oldage Home
+                .oldage-home__banner__desc &quot;Let us together build up brick by brick to strengthen the foundation for Old age home. 
+                    br 
+                    | Be a part of Aasya oldage home construction...&quot;
+        .oldage-home__banner__images__wrapper.section-container.section-container--fixed
+            each image, index in images
+                .oldage-home__banner__image(class="image--"+index style="background-image: url("+ image +")")

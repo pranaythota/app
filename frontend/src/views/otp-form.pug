@@ -1,0 +1,11 @@
+include ../view-modules/modules
+
+doctype
+html
+    +mod-html-head("OTP Form")
+    body
+        +mod-social-icons-sticky()
+        //- +mod-header(navItems)
+        +mod-otp-form()
+        +mod-footer(footerItems, true)
+        +mod-html-scripts()

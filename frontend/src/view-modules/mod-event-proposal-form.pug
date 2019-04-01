@@ -1,0 +1,62 @@
+mixin mod-event-proposal-form()
+    //START: Blood Req Form
+    .section-container.section-container--fixed
+        .reg-form--wrapper
+            p.reg-form--desc "Be a part of
+                strong &nbsp Aasya Foundation
+                |. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            .reg-form--logo--wrapper
+                a(href="01.01-Homepage.html" title="Aasya Foundation | Home"): img.reg-form--logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+            form(action="" method="post" id="evnt-proposal-form")
+                fieldset
+                    legend Event Proposal Form
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="teamName") Team Name :
+                        select.form-group--input(name="teamName" id="teamName" required)
+                            option(value="") Select Your Team
+                            option(value="Aasya Bangalore") Aasya Bangalore
+                            option(value="Aasya Chennai") Aasya Chennai
+                            option(value="Aasya Hyderabad") Aasya Hyderabad
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="EventName") Event Name :
+                        input.form-group--input(name="eventName" type="text" id="EventName" required minlength=3 maxlength=30)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="eventType") Event Type :
+                        select.form-group--input(name="eventType" id="eventType" required)
+                            option(value="") Select Your Event Type
+                            option(value="major") Major
+                            option(value="regular") Regular
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="doe") Date of Event :
+                        input.form-group--input(name="DOE" type="date" id="doe" required min="1950-01-01")
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="volCount") No. of Volunteers :
+                        input.form-group--input(name="volunteerCount" type="number" id="volCount" required minlength=1 maxlength=4)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="bEst") Budget Estimated :
+                        input.form-group--input(name="budgetEstimation" type="number" id="bEst" required minlength=1 maxlength=6)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="state") State :
+                        select.form-group--input(name="state" id="state" required)
+                            option(value="") Select Your State
+                            // States will be populated from JSON
+                    .form-group.has-padding--left
+                        label.form-group--label(for="city") City :
+                        select.form-group--input(name="city" id="city" required)
+                            option(value="") Select Your City
+                            // Cities will be populated from JSON, based on state selection
+                    .form-group.form-group--fluid
+                        label.form-group--label.align--top(for="eventDesc") Detail Explanation:
+                        textarea.form-group--input.height--auto(cols="20" rows="5" name="eventDescription" type="text" id="eventDesc" required)
+                    // Check with puppy about Contact Mode Either Mail or Mobile - Based on that add Mode of contact
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="email") Email :
+                        input.form-group--input(name="email" type="email" id="email" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="phoneno") Phone No. :
+                        input.form-group--input(name="phoneNumber" type="number" id="phoneno" required minlength=10)
+                    .reg-form--action-items
+                        input(type="submit" value="Send" title="Send Your Details").af-btn.af-btn--black-border
+                        
+        
+    //END: Blood Req Form

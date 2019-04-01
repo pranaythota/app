@@ -1,0 +1,232 @@
+@mixin mod-projects-events(){
+    //START: Module Projects-Events - Desktop
+    .pro-events{
+        &--wrapper{
+            padding: 40px 0;
+            font-size: 0;
+            color: $black;
+            font-family: $font-medium;
+
+            > div {
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+
+                &:first-child{
+                    padding-right: 25px;
+                }
+                &:last-child{
+                    padding-left: 25px;
+                }
+            }
+        }
+        &--heading{
+            @include rem-fallback(font-size, 24);
+            @include rem-fallback(line-height, 28);
+            margin-bottom: 30px;
+        }
+        &--items-left--inner{
+            &--image{
+                background-color: #000;
+                height: 350px;
+                margin-top: 30px;
+                background-image: url('../images/img-01.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            &--title{
+                @include rem-fallback(font-size, 18);
+                @include rem-fallback(line-height, 22);
+                @include rem-fallback(letter-spacing, 0.8);
+                margin: 25px 0;
+                font-weight: bold;
+            }
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 20);
+                margin: 15px 0;
+            }
+        }
+        &--items-right--inner{
+            font-size: 0;
+
+            &.pro-events--items-right--inner--fixed-height{
+                // height: 100px;
+                height: auto;
+                overflow: auto;
+                margin-bottom: 20px;
+
+                .pro-events--items-right--inner--right{
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+
+            &--image{
+                background-color: #ccc;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &--left{
+                width: 180px;
+                height: 120px;
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 25px;
+                padding-right: 10px;
+            }
+            &--right{
+                width: calc(100% - 180px);
+                display: inline-block;
+                vertical-align: top;
+                margin-bottom: 25px;
+                padding-left: 10px;
+            }
+            &--title{
+                @include rem-fallback(font-size, 18);
+                @include rem-fallback(line-height, 21);
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            &--date{
+                @include rem-fallback(font-size, 10);
+                @include rem-fallback(line-height, 12);
+                @include rem-fallback(letter-spacing, 0.8);
+                color: #a9a9a9;
+                margin-bottom: 8px;
+            }
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 18);
+            }
+        }
+        &--action--items{
+            text-align: right;
+            margin-top: 30px;
+        }
+    }
+    //END: Module Projects-Events - Desktop
+}
+
+@mixin mod-projects-events-tablet(){
+    //START: Module Projects-Events - Tablet
+    
+    //END: Module Projects-Events - Tablet
+}
+
+@mixin mod-projects-events-mobile(){
+    //START: Module Projects-Events - Mobile
+    .pro-events{
+        &--wrapper{
+            padding: 40px 0;
+
+            .eq-col {
+                height: auto !important;
+            }
+
+            > div {
+                width: 100%;
+                display: block;
+
+                &:first-child{
+                    padding-right: 0;
+                }
+                &:last-child{
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &--items-left{
+            margin-bottom: 30px;
+        }
+        
+        &--heading{
+            // @include rem-fallback(font-size, 24);
+            // @include rem-fallback(line-height, 28);
+            margin-bottom: 25px;
+            color: $black;
+        }
+        &--items-left--inner{
+            &--image{
+                margin: 0 -20px;
+                height: 250px;
+                margin-top: 20px;
+                background-size: 100%;
+            }
+            &--title{
+                margin: 20px 0;
+            }
+            &--desc{
+                margin: 15px 0;
+            }
+        }
+        &--items-right--inner{
+            font-size: 0;
+
+            &.pro-events--items-right--inner--fixed-height{
+                height: auto;
+                // overflow: auto;
+                // margin-bottom: 20px;
+
+                // .pro-events--items-right--inner--right{
+                //     width: 100%;
+                //     padding-left: 0;
+                // }
+            }
+
+            a{
+                &:not(:last-child){
+                    .pro-events--items-right--inner--right{
+                        border-bottom: 2px solid #ccc;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+
+            &--image{
+                background-color: #ccc;
+                width: 100%;
+                height: 100%;
+            }
+            &--left{
+                width: 100%;
+                height: 200px;
+                display: block;
+                margin-bottom: 25px;
+                padding-right: 0;
+            }
+            &--right{
+                margin-bottom: 25px;
+                padding-left: 0;
+                width: 100%;
+                display: block;
+            }
+            &--title{
+                // @include rem-fallback(font-size, 15);
+                // @include rem-fallback(line-height, 18);
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            &--date{
+                // @include rem-fallback(font-size, 10);
+                // @include rem-fallback(line-height, 12);
+                color: #a9a9a9;
+                margin-bottom: 8px;
+            }
+            &--desc{
+                // @include rem-fallback(font-size, 12);
+                // @include rem-fallback(line-height, 15);
+            }
+        }
+        &--action--items{
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+    //END: Module Projects-Events - Mobile
+}

@@ -1,0 +1,39 @@
+mixin mod-header(navItems, activeIndex, isSticky)
+    //START: Header Module
+    header(class=(isSticky ? "header--sticky" : ""))
+        .section-container.section-container--fixed
+            .header--items
+                .header--items--left
+                    .header-logo-wrapper
+                        a(href="home.html" title="Aasya Foundation").header-logo
+                .header--items--right
+                    ul.header--nav-items.hidden-xs
+                        each navItem, index in navItems
+                            if(navItem.isHighlight)
+                                li.highlighted: a(href= navItem.url title= navItem.item) #{navItem.item}
+                            else
+                                if(index === activeIndex)
+                                    li.active: a(href= navItem.url title= navItem.item) #{navItem.item}
+                                else
+                                    li: a(href= navItem.url title= navItem.item) #{navItem.item}
+                    .header--items--right--device-menu
+                        a(href="javascript:void(0)", title="Menu", class="device-menu")
+                            span.hamburger-icon
+                                span.line.line-1
+                                span.line.line-2
+                                span.line.line-3
+    //- .header--cusion
+    .header--nav-items--device.visible-xs
+        .header--nav-items--device--close &times;
+        ul.header--nav-items
+                    each navItem, index in navItems
+                        if(navItem.isHighlight)
+                            li.highlighted: a(href= navItem.url title= navItem.item) #{navItem.item}
+                        else
+                            if(index === activeIndex)
+                                li.active: a(href= navItem.url title= navItem.item) #{navItem.item}
+                            else
+                                li: a(href= navItem.url title= navItem.item) #{navItem.item}
+    .header--nav-items--device--overlay
+
+    //END: Header Module               

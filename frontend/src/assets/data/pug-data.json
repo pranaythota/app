@@ -1,0 +1,528 @@
+{
+    "navItems": [
+        {
+            "item": "Home",
+            "url": "home.html"
+        },
+        {
+            "item": "About Us",
+            "url": "about.html"
+        },
+        {
+            "item": "Events",
+            "url": "events.html"
+        },
+        {
+            "item": "Contact Us",
+            "url": "contact.html"
+        },
+        {
+            "item": "Walkathon", 
+            "url": "event-participation.html"
+        },
+        {
+            "item": "Join Us",
+            "url": "reg-form.html",
+            "isHighlight": true
+        }
+    ],
+    "bannerImages": [
+        "../assets/images/1.jpg",
+        "../assets/images/2.jpg",
+        "../assets/images/3.jpg",
+        "../assets/images/4.jpg"
+    ],
+    "mainEvents": [
+        {
+            "title": "Aanandadaan",
+            "desc": "Aanandadaan is our food donation program ,started with a motive to feed the hunger and the poor.A much needed nutritious food cooked by our volunteers & is distributed to them.",
+            "url": "../assets/images/anadadaan.jpg"
+        },
+        {
+            "title": "Walkathon",
+            "desc": "Our main moto behind walkathons is to create Awareness among people on fatal diseases and majorly to raise funds for cancer affected children.All the funds raised thru these walkathons are donated to these kids for their Operations and Medical expenses.",
+            "url": "../assets/images/walkathon.jpg"
+        },
+        {
+            "title": "Beat the Heat",
+            "desc": "As we have experienced a drastic increase of temperature this year, we could feel the exhaustion and thirst of the people working in this hot sun, hence decided to take an initiative by providing water and buttermilk to crunch their thirst through BEAT THE HEAT program in various parts of our Hyderabad, and many major villages and cities.",
+            "url": "../assets/images/butter-milk.jpg"
+        }
+    ],
+    "footerItems":[
+        {
+            "item": "Terms & Conditions",
+            "url": "terms&conditions.html"
+        },
+        {
+            "item": "Internships",
+            "url": "internships.html"
+        },
+        {
+            "item": "Refund & Cancellation Policy",
+            "url": "refund-policy.html"
+        },
+        {
+            "item": "Privacy Policy",
+            "url": "privacy-policy.html"
+        }
+    ],
+    "news": [
+        {
+            "title": "NGO Doing Better",
+            "date": "01 Oct 2018",
+            "source": "published in Eenadu",
+            "desc": "Be a part of aasya old age home construction Home for old age people's at  hyderabad. A place for beautiful grandmothers and grandfathers",
+            "url": "../assest/images/img-01.jpg"
+        },
+        {
+            "title": "Blanket Drive",
+            "date": "02 Oct 2018",
+            "source": "published in Vaartha",
+            "desc": "Be a part of aasya old age home construction Home for old age people's at  hyderabad. A place for beautiful grandmothers and grandfathers",
+            "url": "../assest/images/img-01.jpg"
+        },
+        {
+            "title": "NGO Doing Better",
+            "date": "01 Oct 2018",
+            "source": "published in Eenadu",
+            "desc": "Be a part of aasya old age home construction Home for old age people's at  hyderabad. A place for beautiful grandmothers and grandfathers",
+            "url": "../assest/images/img-01.jpg"
+        }
+    ],
+    "UReq": [
+        {
+            "title": "Blood Required",
+            "desc": "Urgent blood requirement O+ at hyderabad KIMS contact number: 9492913475",
+            "date": "01 Oct 2018"
+        }
+    ],
+    "highlights": [
+        {
+            "title": "Child Education",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's",
+            "imageUrl": "../assets/images/child-education.jpg"
+        },
+        {
+            "title": "Child Adoption",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's",
+            "imageUrl": "../assets/images/child-adoption.jpg"
+        },
+        {
+            "title": "Child Care",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's",
+            "imageUrl": "../assets/images/child-care.jpg"
+        }
+    ],
+    "events": [
+        {
+            "title": "Aanandadaan-49",
+            "date": "11th June 2018",
+            "city": "Mother's Nest, Hyderabad",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's"
+        },
+        {
+            "title": "Aanandadaan-48",
+            "date": "30th May 2018",
+            "city": "New Life Children Home, Hyderabad",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's"
+        },
+        {
+            "title": "Fruit Drive",
+            "date": "27th May 2018",
+            "city": "Sivananda Rehabilitation home, Hyderabad",
+            "desc": "Lorem ipsum is a dummy text of priniting and type setting industry. Lorem ipsum has been tha industry's"
+        },
+        {
+            "title": "Aanandadaan-48",
+            "date": "27th May 2018",
+            "city": "Serve Needy Orphanage, Hyderabad"
+        },
+        {
+            "title": "Food Drive",
+            "date": "3rd June 2018",
+            "city": "Anuragh Orphanage, Guntur"
+        },
+        {
+            "title": "Food Drive",
+            "date": "27th May 2018",
+            "city": "Vatsalyam foundation, Nagole"
+        },
+        {
+            "title": "Aanandadaan-46",
+            "date": "27th May 2018",
+            "city": "Anupriya Oldage Home, Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-45",
+            "date": "26th May 2018",
+            "city": "Rainbow Girl Home, Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-44",
+            "date": "25th May 2018",
+            "city": "Vatsalya Sindhu orphanage, Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-43",
+            "date": "23rd May 2018",
+            "city": "Hyderabad"
+        },
+        {
+            "title": "Clothes Donation",
+            "date": "22nd May 2018",
+            "city": "Hyderabad"
+        },
+        {
+            "title": "Butter milk Distribution",
+            "date": "20th May 2018",
+            "city": "Vishakapatnam"
+        },
+        {
+            "title": "Butter milk Distribution",
+            "date": "20th May 2018",
+            "city": "Uppal, Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-42",
+            "date": "20th May 2018",
+            "city": "Aadrash Orphanage, Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-41",
+            "date": "20th May 2018",
+            "city": "Gandhi Hospital, Hyderabad"
+        },
+        {
+            "title": "Food Drive",
+            "date": "19th May 2018",
+            "city": "Hyderabad"
+        },
+        {
+            "title": "Buttermilk Distribution",
+            "date": "13th May 2018",
+            "city": "Chennai"
+        },
+        {
+            "title": "Aanandadaan-40",
+            "date": "13th May 2018",
+            "city": "Hyderabad"
+        },
+        {
+            "title": "Stationary Distribution",
+            "date": "28th April 2018",
+            "city": "Hyderabad"
+        },
+        {
+            "title": "Aanandadaan-39",
+            "date": "29th April 2018",
+            "city": "Hyderabad"
+        }
+    ],
+    "brdmembers": [
+        {
+            "name": "Gowthami Sahadeva",
+            "position": "General Secretary",
+            "desc": [
+                "I’ve been with Aasya for about 3 yrs. now. Aasya Foundation is not just an Organisation for me anymore, it has become a Family, bundle of Responsibility and Joy. I remember the days we started off with handful of people and now, we are a family of more than 1000 Volunteers.",
+                "As the number of volunteers increased we also have expanded our services from raising funds for cancer patients to heart patients and other life threatening health conditions. Also we spend some quality time with Elders in old age homes, orphanages spreading happiness, love and knowing their needs, providing education & financial help to the inaccessible and unaffordable, we also have conducted other events like donating blankets to the poor, food donation campaigns, buttermilk campaigns, free dental camps and many more….",
+                "As we are increasing in number not just in Hyderabad, we are now active in 10 other major cities as well. We’ll make sure to come up with many more services to offer, so that we can help more needy people in a short span.",
+                "I would let you all know that I have joined Aasya as a volunteer in its budding stage, been a Member of the Board and so on…. It’s been a wonderful journey till date with lots of up’s and Down’s in our way, but we surely enjoyed it coz that is what made Aasya what it is now.",
+                "And one thing I’d like to add, We are and Will Strive to be an inspiration, a platform for many who are willing to give their part of service, time and dedication to Serve the Society.",
+                "Better the Society today, Better Future…"
+            ],
+            "shortdesc":"I’ve been with Aasya for about 3 yrs. now. Aasya Foundation is not just an Organisation for me anymore, it has become a Family, bundle of Responsibility...",
+            "link": "javascript:void(0)",
+            "id": "gs",
+            "thumbImageUrl":"../assets/images/gowthami.jpg",
+            "imageUrl":"../assets/images/gowthami-2.jpg"
+        },
+        {
+            "name": "Meghana Nanduri",
+            "position": "Joint Secretary",
+            "desc": [
+                "I am writing this piece to share my love and regards to the Aasya foundation, a student run NGO dedicated to fight back and help the people affected with different kind of diseases; financially, emotionally and psychologically.",
+                "Aasya Foundation provides Health Care services to the underserved people of India.",
+                "I, Meghana N, with the recommendation of my friend, joined this organization as a Joint Secretary while I was still pursuing my engineering. The idea of serving the needy and to let myself dissolve in the actions that consequently provide joy to this community, I was moved to join this Non-Profit Organization.",
+                "While my way in, I was delighted to meet Mr. Nagarjuna who is the President of this Foundation and the one that shared the vision of his initiatives. A profound leader as he is, not only did he inspired people, he led my spirit to have an absolute zeal towards helping and serving the society.",
+                "During my visit to one of Aasya Foundation’s finest events at the Thara Orphanage, where we celebrated our 2nd Anniversary, I met so many children living under the supervision of Vishnu, who also grew up as an orphan in the same orphanage. Seeing them smile for a moment, I could not contemplate how I must feel. Even though they had no parents they were content, playful and happy.",
+                "On this day, the kids and I had long chats, we had fun, we studied, and in the afternoon when it was time for lunch, Fruits and chocolates were distributed. We also had a family that visited the orphanage and they wanted to celebrate their child’s birthday. It was a pleasant experience having all these people around but the best part was when the members of Aasya Foundation and I were so engaged in our own responsibilities and duties that we did not realize we haven’t eaten anything since morning until Vishnu came to me offering me a banana. I asked him “If I eat this banana what will you eat then?”",
+                "He replied softly “Sister, the way you treated us with so much love and patience today, I haven’t felt or seen it before. I see my mother in you. You treated me and the others like your own kids”",
+                "I had no words. This child just entitled me as his mother. My heart was filled with a vague feeling of accomplishment that I didn’t understand. And ever since I rejoice this moment.",
+                "I told Vishnu that it was the best thing I have ever heard. I replied to him saying ‘I will always love you kid and we will miss you’ and he cutely replied back saying “me too”",
+                "Gazing at his expression my eyes were blurred with droplets of tears and I couldn’t have felt happier from that day onward. It was literally the best moment of my life.",
+                "And then while we departed, he insisted that I visit the orphanage again with my team, to spend time with the children and while we were leaving, he started crying",
+                "Honestly, of all the relations with people in this country, the bond with Vishnu was realest and officially the best since date. I want to go back!"
+            ],
+            "shortdesc": "I, Meghana Nanduri, with the recommendation of my friend, joined this organization as a Joint Secretary while I was still pursuing my engineering. The idea...",
+            "link": "javascript:void(0)",
+            "id": "mn",
+            "thumbImageUrl":"../assets/images/meghana.jpg",
+            "imageUrl":"../assets/images/meghana-2.jpg"
+        },
+        {
+            "name": "SathyaNagi Reddy",
+            "position": "Treasurer",
+            "desc": [
+                "Hi, I am Sathyanagi Reddy from Ananthapuramu. I am an employee at GRID2CHIP. I am doing a service at Aasya Foundation as a Treasurer. Aasya Foundation is a student run National Non governmental organization (NGO) dedicated to fight back and help the people who are affected with different kind of diseases financially, emotionally and psychologically. One day I met Mr. P. Nagarjuna (Formerly known as Sreeram and he was a Student of M.C.A at SNIST, Hyderabad), Founder and President of Aasya Foundation at my flat in Hyderabad through one of my friend, as he is of Mr. Nagarjuna. As I was also interested in doing service to the needy people, I joined the foundation by asking the president of Aasya Foundation and he agreed for that.",
+                "In my journey with Aasya Foundation, I met different types of people with the different types of backgrounds and with the common nature of service to the needy people, all were friendly in nature and most of them are students at various colleges.",
+                "We all were as a Family of Aasya Foundation without having any personnel feelings and we all worked for the growth of Foundation. We helped many people like old age people, Orphans, diseased Childs (like affected with many types of cancers, Heart Diseases and many), Poor people who have problem for studying their children financially, emotionally and psychologically who are in need them.",
+                "We have conducted many of flash mobs, Events, Food drives etc., in way of helping needy people and to bring awareness on many diseases and needy people.",
+                "I am really thank full Mr. P Nagarjuna, President of Aasya and Aasya Foundation team for helping, supporting and giving me an wonderful Platform and opportunity for serving the needy people and to make them happy.",
+                "“People will forget what you said, people will forget what you did, but people will never forget how you made them feel”."
+            ],
+            "shortdesc": "I am Sathyanagi Reddy from Ananthapuramu.I am doing a service at Aasya Foundation as a Treasurer. Aasya Foundation is a student run National...",
+            "link": "javascript:void(0)",
+            "id": "snr",
+            "thumbImageUrl":"../assets/images/sathya.jpg",
+            "imageUrl":"../assets/images/sathya-2.jpg"
+        }
+    ],
+    "count": [
+        {
+            "category": "volunteers",
+            "count": "1K",
+            "text": "Volunteers"
+        },
+        {
+            "category": "cities",
+            "count": "13",
+            "text": "Cities"
+        },
+        {
+            "category": "benificiaries",
+            "count": "20",
+            "text": "Benificiaries"
+        },
+        {
+            "category": "events",
+            "count": "200",
+            "text": "Events"
+        },
+        {
+            "category": "journey",
+            "count": "3Y",
+            "countSmall": "rs.",
+            "text": "Journey"
+        }
+    ],
+    "cityDetails": [
+        {
+            "name": "Hyderabad",
+            "number": "+91.9676435934",
+            "mail": "aasyahyderabad@gmail.com"
+        },
+        {
+            "name": "Bangalore",
+            "number": "+91.7032851791",
+            "mail": "aasyabangalore@gmail.com"
+        },
+        {
+            "name": "Chennai",
+            "number": "+91.9941317359 / +91.9176023345",
+            "mail": "aasyachennai17@gmail.com"
+        },
+        {
+            "name": "Tirupati",
+            "number": "+91.9952952325",
+            "mail": "aasyatirupathi@gmail.com"
+        },
+        {
+            "name": "Coimbatore",
+            "number": "+91.9494953077",
+            "mail": "aasyaoimbatore@gmail.com"
+        },
+        {
+            "name": "Vizag",
+            "number": "+91.9967378122",
+            "mail": "aasyafoundation.vizag2018@gmail.com"
+        },
+        {
+            "name": "Vijayawada",
+            "number": "+91.9542125899",
+            "mail": "aasyavijayawada18@gmail.com"
+        },
+        {
+            "name": "Jangoan",
+            "number": "+91.9666142639",
+            "mail": "aasyajangaon0502@gmail.com"
+        },
+        {
+            "name": "Rajamundry",
+            "number": "+91.9010913503",
+            "mail": "aasyarajahmundry@gmail.com"
+        },
+        {
+            "name": "Guntur",
+            "number": "+91.9290929963",
+            "mail": "myaasya111@gmail.com"
+        },
+        {
+            "name": "Delhi",
+            "number": "+91.9866728051",
+            "mail": "aasyafoundationdelhi@gmail.com"
+        },
+        {
+            "name": "Kadapa",
+            "number": "+91.850033106",
+            "mail": "aasyakadapa@gmail.com"
+        },
+        {
+            "name": "Nellore",
+            "number": "+91.7090418051",
+            "mail": "aasyanellore@gmail.com"
+        },
+        {
+            "name": "Gudivada",
+            "number": "+91.7095420286",
+            "mail": "aasaygudivada@gmail.com"
+        }
+    ],
+    "adminBlocks": [
+        {
+            "title": "Approve Registered Users",
+            "url": ""
+        },
+        {
+            "title": "Events",
+            "url": ""
+        },
+        {
+            "title": "Create New User",
+            "url": ""
+        },
+        {
+            "title": "Registered User Details",
+            "url": ""
+        },
+        {
+            "title": "Send Mail to all Volunteers",
+            "url": ""
+        },
+        {
+            "title": "Send Mail to City Heads",
+            "url": ""
+        },
+        {
+            "title": "Send Mail to Board Members",
+            "url": ""
+        }
+    ],
+    "terms": [
+        "Registration is mandatory for any joining’s.",
+        "Temporary ID will be provided for first 6 Months. Based on the service/performance /participation during the first 6 month’s period, permanent ID card will be given.",
+        "Volunteers should and must wear AASYA T-Shirt for any event/meeting they attend.",
+        "Every volunteer should contribute 100/- RUPEES every month irrespective of any event. Any contributions from your end should be transferred to AASYA FOUNDTION’s BANK ACCOUNT /PayTM Account. (AASYA Foundation /Volunteers/Members should not do any IN-Hand CASH transactions.",
+        "At any point of time, Foundation has full authority to cancel the membership / volunteer ship of a member in case of any DISCIPLINARY VIOLATION.",
+        "Every Volunteer SHOULD attend /participate atleast 1 EVENT PER MONTH (You will be exempted if there is any proper reason).If there is any exemption needed, you should inform your team lead/event lead/area head and get it approved prior the event.",
+        "Volunteers who do NOT attend for any 3 consecutive events (without any intimation / permission), will be treated INACTIVE and will be noted in MEMBERS TO BE ERMINATED list. If he/she is INACTIVE for 4 continuous events, will be strictly terminated from the foundation.",
+        "Every volunteer SHOULD attend the VOLUNTEER MEETING which will happen once in every 2 months.",
+        "If any volunteers misuse foundation funds for his/her personal purpose Legal Actions would be taken towards them.",
+        "If any Member/Volunteer is found misbehaving with other's, immediately Strict Action would be taken."
+    ],
+    "volSpeaks": [
+        {
+            "name": "Srinithya",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "I have wondered, more than once, for being a part in Aasya. Because, as it was a screen of many lives pictured together for building an ideal society. I used to think of being passionate about service, but now I am so grateful to work with people, whose passion is all about service. My experience in Aasya from past one year made me to be strong in and out, helped me to increase my dedication levels, team spirit, ethical values and leadership qualities. I used to fell myself for tiny problems. But, after going through the fades of many life shadows. I made myself strong enough to face any situation..!! If I could sum up my experience in Aasya, I would say that it was a life changing step of mine."
+            ]
+        },
+        {
+            "name": "Meghana N",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "I am writing this piece to share my love and regards to the Aasya foundation, a student run NGO dedicated to fight back and help the people affected with different kind of diseases; financially, emotionally and psychologically.",
+                "Aasya Foundation provides Health Care services to the underserved people of India.",
+                "I, Meghana N, with the recommendation of my friend, joined this organization as a Joint Secretary while I was still pursuing my engineering. The idea of serving the needy and to let myself dissolve in the actions that consequently provide joy to this community, I was moved to join this Non-Profit Organization.",
+                "While my way in, I was delighted to meet Mr. Nagarjuna who is the President of this Foundation and the one that shared the vision of his initiatives. A profound leader as he is, not only did he inspired people, he led my spirit to have an absolute zeal towards helping and serving the society.",
+                "During my visit to one of Aasya Foundation’s finest events at the Thara Orphanage, where we celebrated our 2nd Anniversary, I met so many children living under the supervision of Vishnu, who also grew up as an orphan in the same orphanage. Seeing them smile for a moment, I could not contemplate how I must feel. Even though they had no parents they were content, playful and happy.",
+                "On this day, the kids and I had long chats, we had fun, we studied, and in the afternoon when it was time for lunch, Fruits and chocolates were distributed. We also had a family that visited the orphanage and they wanted to celebrate their child’s birthday. It was a pleasant experience having all these people around but the best part was when the members of Aasya Foundation and I were so engaged in our own responsibilities and duties that we did not realize we haven’t eaten anything since morning until Vishnu came to me offering me a banana. I asked him “If I eat this banana what will you eat then?”",
+                "He replied softly “Sister, the way you treated us with so much love and patience today, I haven’t felt or seen it before. I see my mother in you. You treated me and the others like your own kids”",
+                "I had no words. This child just entitled me as his mother. My heart was filled with a vague feeling of accomplishment that I didn’t understand. And ever since I rejoice this moment.",
+                "I told Vishnu that it was the best thing I have ever heard. I replied to him saying ‘I will always love you kid and we will miss you’ and he cutely replied back saying “me too”",
+                "Gazing at his expression my eyes were blurred with droplets of tears and I couldn’t have felt happier from that day onward. It was literally the best moment of my life.",
+                "And then while we departed, he insisted that I visit the orphanage again with my team, to spend time with the children and while we were leaving, he started crying",
+                "Honestly, of all the relations with people in this country, the bond with Vishnu was realest and officially the best since date. I want to go back!"
+            ]
+        },
+        {
+            "name": "Santhosh Kumar Soma",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "I found a love for me in the smiles of the Brothers, sisters (orphans, cancer kids) Grand Mothers & Fathers by fullfilling there small wants & hunger. The SATISFIED eyes & BLESSINGS of them are making me in budding my life & days successfully.",
+                "Those have made me so enthusiastic to be an AASYAN 💗"
+            ]
+        },
+        {
+            "name": "Bharghav Chowdary",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "First of all i am very gald to be a part of this huge family i never expected this in my life like i would be serving the poor from my bottom of the heart I am very thankfull and proud to be member of this family"
+            ]
+        },
+        {
+            "name": "Shirley Eva Paul",
+            "place": "Coimbatore, Tamilnadu",
+            "desc": [
+                "I am B.Shirley Eva Paul. I am so glad to be part of Aasya family, I came to know about Aasya foundation through my senior, who spoke in a very inspiring way by which I was motivated, of course i am interested in helping needy in which  we will find happiness  for the life time in spiritual well being. It is better to give then to receive, donating to the needy is an affective way to improve your neighbourhood or community. Recently there was event 'MAHI' which is one of the best experience coordinated by me, along with m friends and lead successfully. We planned few plant saplings. planting a twice is one of the easiest ways to improve the environment and beatify gases and provide oxygen and prevent soil erosion.",
+                "Each individual plant is great and it is good to see something green,growing and surviving.",
+                "Finally Aasya made me sensitive girl in such a way that i can sense and respond to the sufferings of the needy. Blessed to be as member in Aasya Coimbatore."
+            ]
+        },
+        {
+            "name": "Prashantha Marry",
+            "place": "Jagtial, Telangana",
+            "desc": [
+                "My self Prashanth marry i am Proud being  a part of Aasya foundation. From my childhood I had a special interest in helping needy. One Fine day, through my friend I came to know about Aasya foundation and its  humble activities.Initially I felt shy to interact with people,also I'm  not so good in regional language Tamil. Later on It changed my mindset by actively participating in Aasya events.",
+                "When i attended for the very first event in 'Little hearts'. I felt so happy and overwhelmed with joy. Along with the people in Little hearts we also danced and enjoyed a lot. Few such moments come only once in a life.",
+                "We have completed five other events and the sixth event was 'MAHI' tree plantation.  This Initiative was taken  to plant trees on our team member birthdays . I was given the responsibility to lead this event. I like to thank my Team Aasya Coimbatore for trusting me and for giving me this oppurtunity to lead a event. It was not quiet easy to lead a event. It involves a lots of efforts because if we  work hard; Success comes to our door step. By being a lead for a event , It taught me a lot of things Such as, How to create interest in people to attend the event, How to plan, and Execute the plan. Through this Event I have learnt to overcome my fear. In the name of Aasya foundation, we brought hopes in many lifes. Being a volunteer in Aasya foundation I have learnt to respect people, knowing their needs,sharing words with them. I Am so blessed to do these kind of activities with love. .It also improved my communication skills.",
+                "As a part of Aasya family we did all the events with unity I am proud to say that am a part of Aasya family."
+            ]
+        },
+        {
+            "name": "Vineeth Reddy Kasu",
+            "place": "Guntur, Andhrapradesh",
+            "desc": [
+                "I'm Vineeth, from Guntur in Andhra pradesh. Through Social Sites Such as Instagram and Facebook, I Got to Know about Aasya Foundation and It's Esteemed Activities to the Society. One Fine Day, I Joined With Aasya. I Had a Bunch of Friends Who're already Into It  So, Together we all teamed up to work for a good cause.",
+                "As days passed by, we organized six events in and around coimbatore. Such as visiting orphanages and spending  Valuable time with children, and people around them .We provided all the necessary requirements  to them. I was moved by seeing their struggles and decided to bring Happy smiles on their faces. We've interacted with them and got to know about their  personal lifes.",
+                "Later on for the seventh event, I was given th the opportunity to lead the event. We have conducted AnandaDaan-30 which means spreading happiness By Providing Food. By this I have improved my Leadership skills. Kids over there are Filled Up  with  kindness, they invited our team with lots Of love.",
+                "As all were small and young girls in the orphanage we decided to have an introduction session with them. The kids over there actively took part in our interactive session . They danced ,they sang for us and they enjoyed our accompany a lot.",
+                "I'm Very much Happy  with the Social Service we're doing. The joy i have seen in their faces can't be brought by any valuable thing, we Buy.",
+                "Thank you Aasya foundation for creating a platform like this and making us serve the people and Society"
+            ]
+        },
+        {
+            "name": "Abullaise Syed",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "Working with Aasya has become part of my life..They keep remembering me of that promise which I use to do at school(i.e India is my country all Indians are my brother and sister).I really feel blessed to be a part such foundation.",
+                "Thankyou soo much Aasya for making me part your family."
+            ]
+        },
+        {
+            "name": "Shnathi Kiran B",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "Aasya has been an unstoppable organization helping everyone in need. Myself being an member of aasya family is my honor.Aasya has brought many changes in me which lead me to take right steps in my life as they say an helping hand is so much better than an talking mouth aasya has proved it.",
+                "I am very happy to be part of it."
+            ]
+        },
+        {
+            "name": "Akhil Duvvuru",
+            "place": "Chennai, Tamilnadu",
+            "desc": [
+                "My association with Aasya Foundation started six months ago and has been going strong ever since. The great thing about Aasya is, it follows the dictum of… More events and even more follow-up events. Self-sustainability and transparency are the two strong pillars on which Aasya stands and strives to make the world a better place for everyone.",
+                "The true essence of selflessness reflects in the activities/ causes that Aasya picks up, acting as an enabler for creating a better society, and a better tomorrow.",
+                "Right from working for underprivileged, to adopting children, or simple acts of kindness like spending quality time with the terminally ill or elderly or children, and to see their faces light up with smiles – the spectrum for Aasya is endless. I’ve personally felt enriched mentally and spiritually through my association with the organization. I am happy to be associated with Aasya and through this association would continue to do my bit for the society!"
+            ]
+        },
+        {
+            "name": "Srujana A",
+            "place": "Hyderabad, Telangana",
+            "desc": [
+                "We are proud to be volunteers of aasya foundation.T hanks for letting us know wt the world is outside😊. I am glad that, I'm a part of aasya foundation."
+            ]
+        }
+    ]
+}

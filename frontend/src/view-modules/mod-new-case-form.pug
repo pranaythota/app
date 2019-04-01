@@ -1,0 +1,81 @@
+mixin mod-new-case-form()
+    .section-container.section-container--fixed
+        .reg-form--wrapper
+            p.reg-form--desc "Be a part of
+                strong &nbsp Aasya Foundation
+                |. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            .reg-form--logo--wrapper
+                a(href="01.01-Homepage.html" title="Aasya Foundation | Home"): img.reg-form--logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+            form(action="" method="post" id="reg-form")
+                fieldset
+                    legend Patient Details
+                    .form-group.has-padding--right
+                        label.form-group--label(for="firstName") First Name :
+                        input.form-group--input(name="firstName" type="text" id="firstName" required minlength=3 maxlength=40)
+                    .form-group.has-padding--left
+                        label.form-group--label(for="lastName") Last Name :
+                        input.form-group--input(name="lastName" type="text" id="lastName" required minlength=3 maxlength=40)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="age") Age :
+                        input.form-group--input(name="age" type="number" id="age" minvalue="0")
+                    .form-group.has-padding--left
+                        label.form-group--label(for="gender") Gender :
+                        select.form-group--input(name="gender" id="gender" required)
+                            option(value="") Select your Gender
+                            option(value="Male") Male
+                            option(value="Female") Female
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="case") Type of Case :
+                        input.form-group--input(name="typeOfCase" type="text" id="case" required placeholder="Accident/Disease Type")
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="detailDescription") Detail Description :
+                        textarea.form-group--input(cols="20" rows="10" name="detailDescription" type="text" id="detailDescription" required placeholder="Describe Case Here")
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="amtRequired") Amount Required :
+                        input.form-group--input(name="amountRequired" type="text" id="amtRequired" required placeholder="Amount Required (INR)" minvalue="1" maxlength="10")
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="surgeonName") Surgeon Involved :
+                        input.form-group--input(name="surgeonName" type="text" id="surgeonName" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="parentName") Guardian/Parent Name :
+                        input.form-group--input(name="parentName" type="text" id="parentName" required)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="state") State :
+                        select.form-group--input(name="state" id="state")
+                            option(value="") Select Your State
+                            // States will be populated from JSON
+                    .form-group.has-padding--left
+                        label.form-group--label(for="city") City :
+                        select.form-group--input(name="city" id="city")
+                            option(value="") Select Your city
+                            // Cities will be populated from JSON, based on state selection
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="hospitalName") Hospital Name :
+                        input.form-group--input(name="hospitalName" type="text" id="hospitalName" required)
+                    br
+                    h3.reg-form--heading Documents to be Uploaded:
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="patientIDproof") Patient ID Proof :
+                        input.form-group--input(name="patientIDproof" type="file" id="patientIDproof" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="GuardianIDproof") Guardian ID Proof :
+                        input.form-group--input(name="GuardianIDproof" type="file" id="GuardianIDproof" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="estimationReports") Estimation Reports :
+                        input.form-group--input(name="estimationReports" type="file" id="estimationReports" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="patientReports") Patient Reports :
+                        input.form-group--input(name="patientReports" type="file" id="patientReports" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="patientPhoto") Patient Photo :
+                        input.form-group--input(name="patientPhoto" type="file" id="patientPhoto" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="noObjectionLetter") No Objection Letter :
+                        input.form-group--input(name="noObjectionLetter" type="file" id="noObjectionLetter" accept="image/*" required)
+                    .form-group.form-group--fluid
+                        input.form-group--input.form-group--input--left(name="termsAndConditions" type="checkbox" id="termsAndConditions" required)
+                        label.form-group--label.form-group--label--right(for="termsAndConditions") I accept 
+                            a(href="#") Terms & Conditions.
+                    .reg-form--action-items
+                        input(type="submit" value="Submit" title="Submit Your Details").af-btn.af-btn--black-border
+                        

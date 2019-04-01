@@ -1,0 +1,208 @@
+@mixin mod-vol-speaks(){
+    //START: Module - Volunteer Speaks - Desktop
+    .vol-speak{
+
+        &__item{
+            margin: 30px 0;
+            padding-bottom: 30px;
+
+            &:after{
+                // content: '';
+                position: absolute;
+                width: 50%;
+                max-width: 500px;
+                margin: 0 auto;
+                height: 2px;
+                background-color: #454545;
+                left: 50%;
+                transform: translateX(-50%);
+                @include prefix(transform, translateX(-50%));
+                bottom: 0;
+            }
+        }
+
+        &__wrapper{
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 30px;
+            color: #000;
+        }
+
+        &__heading{
+            text-align: center;
+            @include rem-fallback(font-size, 24);
+            margin: 20px 0 30px 0;
+            color: #ff3366;
+        }
+
+        &__hero{
+            width: 100%;
+            height: 380px;
+            background-image: url(../images/crowd.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            &__overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            &__image{
+                &__wrapper{
+                    width: 100%;
+                    height: 300px;
+                    z-index: 99;
+                    max-width: $max-width;
+                    margin: 0 auto;
+                    margin-top: -210px;
+                    border: 6px solid #555;
+                    background-color: #ccc;
+                    background-image: url(../images/crowd.png);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                &__border{
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid #fff;
+                }   
+            }
+        }
+
+        &--overlay{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            position: absolute;
+            top: 0;
+        }
+        &--wrapper{
+            padding: 80px 0;
+            margin-bottom: 40px;
+            background: url('../images/crowd.png') no-repeat center;
+        }
+        &--items{
+            font-size: 0;
+            text-align: center;
+
+            &--divider{
+                width: 2px;
+                position: absolute;
+                height: 100%;
+                background-color: #ffffff;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+
+            &--left{
+                width: 100%;
+                display: inline-block;
+                padding: 0 40px;
+            }
+
+            &--right{
+                width: 50%;
+                display: inline-block;
+                padding: 0 40px;
+            }
+
+            &--heading{
+                @include rem-fallback(font-size, 24);
+                @include rem-fallback(line-height, 28);
+                @include rem-fallback(letter-spacing, 0.8);
+                margin-bottom: 20px;
+            }
+
+            &--desc{
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 21);
+                @include rem-fallback(letter-spacing, 0.5);
+                margin-bottom: 20px;
+
+                &--tag-line{
+                    @include rem-fallback(font-size, 14);
+                    @include rem-fallback(line-height, 18);
+                    @include rem-fallback(letter-spacing, 0.8);
+                    text-align: right;
+                    display: block;
+                }
+            }
+        }
+    }
+    //END: Module - Volunteer Speaks - Desktop
+}
+
+@mixin mod-vol-speaks-tablet(){
+    //START: Module - Volunteer Speaks - Tablet
+    .vol-speak{
+        &__wrapper{
+            padding: 20px;
+        }
+    }
+    //END: Module - Volunteer Speaks - Tablet
+}
+
+@mixin mod-vol-speaks-mobile(){
+    //START: Module - Volunteer Speaks - Mobile
+    .vol-speak{
+
+        &__hero{
+            height: 250px;
+        }
+
+        &__wrapper{
+            padding: 0;
+        }
+
+        &--wrapper{
+            padding: 60px 0;
+            margin-bottom: 30px;
+        }
+        &--items{
+            font-size: 0;
+            text-align: center;
+
+            &--divider{
+                width: 100%;
+                position: absolute;
+                height: 2px;
+                background-color: #ffffff;
+                // left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &--left{
+                width: 100%;
+                display: block;
+                padding: 0;
+                // margin-bottom: 50px;
+            }
+
+            &--right{
+                width: 100%;
+                display: block;
+                padding: 0;
+                // margin-top: 50px;
+            }
+
+            &--heading{
+                margin-bottom: 20px;
+            }
+
+            &--desc{
+                margin-bottom: 20px;
+
+                &--tag-line{
+                    text-align: right;
+                }
+            }
+        }
+    }
+    //END: Module - Volunteer Speaks - Mobile
+}

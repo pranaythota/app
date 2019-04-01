@@ -1,0 +1,21 @@
+mixin mod-events()
+    .section-container--fluid
+        .event__banner
+            .event__banner__overlay
+            +mod-events-content()
+        .event__details__wrapper
+            .event__details__regwrapper
+                a(href="../assets/images/events.jpg").event__details__image
+
+                a.event__details__link(href="event-participation.html") Register Here
+
+            .event__details__address
+                .event__location 
+                    a(href="https://www.google.co.in/maps/dir/Jalavihar+Water+Park,+22%2F9,+Necklace+Rd,+Hussain+Sagar,+Khairatabad,+Hyderabad,+Telangana+500063/''/@17.4330066,78.4296483,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bcb90addf85ec95:0x5d452de82c23ebb3!2m2!1d78.464668!2d17.4329278!1m5!1m1!1s0x3bcb90addf85ec95:0x5d452de82c23ebb3!2m2!1d78.464668!2d17.4329278" target="_blank") 
+                        span.icon-location Jalavihar
+                .event__date
+                    span.icon-calendar 15th July 2018
+                .event__time
+                    span.icon-clock 6 AM onwards
+            
+

@@ -1,0 +1,131 @@
+@mixin mod-board-members(){
+    //START: Module Board Members - Desktop
+    .fancybox-navigation .fancybox-button::after{
+        content: none;
+    }
+    .brdmembers{
+        &__details{
+            &__wrapper{
+                font-size: 0;
+                text-align: right;
+                .card__inner__bottom__rounded-image{
+                    position: static;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                    width: 100px;
+                    height: 100px;
+                    border: 2px solid #454545;
+                }
+            }
+        }
+        &__wrapper{
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        &__heading{
+            @include rem-fallback(font-size, 21);
+            @include rem-fallback(line-height, 24);
+            @include rem-fallback(letter-spacing, 0.8);
+            color: #ff3366;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            border-top: 2px solid #999999;
+            border-bottom: 2px solid #999999;
+            margin-bottom: 40px;
+        }
+        &__card{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+        &__article{
+            &__container{
+                color: #000;
+                font-family: $font-regular;
+                width: 100%;
+                max-width: 70%;
+                margin: 20px auto;
+                padding: 50px 40px;
+                display: none;
+            }
+            &__desc{
+                margin: 15px 0;
+                @include rem-fallback(font-size, 15);
+                @include rem-fallback(line-height, 24);
+            }
+            &__author{
+                text-align: right;
+                @include rem-fallback(font-size, 15);
+                display: inline-block;
+                vertical-align: middle;
+                line-height: 1.6;
+                text-align: left;
+            }
+        }
+    }
+    //END: Module Board Members - Desktop
+}
+
+@mixin mod-board-members-tablet(){
+    //START: Module Board Members - Tablet
+    .brdmembers{
+        &__wrapper{
+            padding: 40px 0;
+            width: 100%;
+        }
+        &__article{
+            &__container{
+                max-width: 80%;
+                padding: 50px 30px;
+            }
+            &__desc{
+            }
+            &__author{
+            }
+        }
+    }    
+    //END: Module Board Members - Tablet
+}
+
+@mixin mod-board-members-mobile(){
+    //START: Module Board Members - Mobile
+    .brdmembers{
+        &__wrapper{
+            padding: 25px 0;
+            width: 100%;
+        }
+
+        &__heading{
+            margin-bottom: 25px;
+        }
+
+        &__card{
+            width: 100%;
+            display: block;
+
+            &__wrapper{
+                margin-top: 25px;
+            }
+        }
+        &__article{
+            &__container{
+                max-width: 95%;
+                padding: 30px 20px;
+                margin: 30px auto;
+            }
+            &__desc{
+            }
+            &__author{
+            }
+        }
+
+    }
+    //END: Module Board Members - Mobile
+}

@@ -1,0 +1,66 @@
+mixin mod-blood-req-form()
+    //START: Blood Req Form
+    .section-container.section-container--fixed
+        .reg-form--wrapper
+            p.reg-form--desc "Be a part of
+                strong &nbsp Aasya Foundation
+                |. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+            .reg-form--logo--wrapper
+                a(href="01.01-Homepage.html" title="Aasya Foundation | Home"): img.reg-form--logo--image(src="../assets/images/logo.png" alt="Aasya Foundation Logo" title="Aasya Foundation")
+            form(action="" method="post" id="blood-reg-form")
+                fieldset
+                    legend Blood Requirement Form
+                    h3.reg-form--heading Patient Details:
+                    .form-group.has-padding--right
+                        label.form-group--label(for="firstName") First Name :
+                        input.form-group--input(name="firstName" type="text" id="firstName" required minlength=3 maxlength=20)
+                    .form-group.has-padding--left
+                        label.form-group--label(for="lastName") Last Name :
+                        input.form-group--input(name="lastName" type="text" id="lastName" required minlength=3 maxlength=20)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="gender") Gender :
+                        select.form-group--input(name="gender" id="gender" required)
+                            option(value="") Select Your Gender
+                            option(value="Male") Male
+                            option(value="Female") Female
+                    .form-group.has-padding--left
+                        label.form-group--label(for="age") Age :
+                        input.form-group--input(name="age" type="number" id="age" required )
+                    .form-group.has-padding--right
+                        label.form-group--label(for="bloodGroup") Blood Group:
+                        input.form-group--input(name="bloodGroup" type="text" id="bloodGroup" required minlength=1 maxlength=10)
+                    .form-group.has-padding--left
+                        label.form-group--label(for="bloodUnitsReq") Units Required :
+                        input.form-group--input(name="bloodUnitsRequired" type="number" id="bloodUnitsReq" required minlength=1 maxlength=5)
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="bloodPlatelets") Blood Type:
+                        input.form-group--input(name="bloodPlatelets" type="text" id="bloodPlatelets" placeholder="Blood/Platelets Type" required minlength=2 maxlength=30)
+                    br
+                    h3.reg-form--heading Contact Details:
+                    .form-group.form-group--fluid
+                        label.form-group--label(for="contactName") Contact Name :
+                        input.form-group--input(name="contactName" type="text" id="contactName" required minlength=3 maxlength=50)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="phoneno") Contact No. :
+                        input.form-group--input(name="phoneNumber" type="number" id="phoneno" required minlength=6 maxlength=20)
+                    .form-group.has-padding--left
+                        label.form-group--label(for="email") Email :
+                        input.form-group--input(name="email" type="email" id="email" required)
+                    .form-group.has-padding--right
+                        label.form-group--label(for="state") State :
+                        select.form-group--input(name="state" id="state" required)
+                            option(value="") Select Your State
+                            // States will be populated from JSON
+                    .form-group.has-padding--left
+                        label.form-group--label(for="city") City :
+                        select.form-group--input(name="city" id="city" required)
+                            option(value="") Select Your City
+                            // Cities will be populated from JSON, based on state selection
+                    .form-group.form-group--fluid
+                        label.form-group--label.align--top(for="address") Complete Address:
+                        textarea.form-group--input.height--auto(cols="20" rows="5" name="address" type="text" id="address" required)
+                    .reg-form--action-items
+                        input(type="submit" value="Send" title="Send Your Details").af-btn.af-btn--black-border
+                        
+        
+    //END: Blood Req Form

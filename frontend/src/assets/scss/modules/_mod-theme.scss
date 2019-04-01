@@ -1,0 +1,89 @@
+$box-shadow-color: #888888;
+
+@mixin mod-theme(){
+    /* START: Module - Theme - Desktop */
+    .snapshot{
+
+        &__container{
+            padding:50px;
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+   
+        &__wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        &__card{
+            width: 33.33%;
+            max-width: 300px;
+            margin: 0 auto;
+            // display: inline-block;
+            height: auto;
+            background-color: #ccc;
+            box-shadow: 2px 2px 5px $box-shadow-color;
+            margin-bottom: 30px;
+
+            // &:nth-child(2n+1){
+            //     margin: 0 20px;
+            //     margin-bottom: auto;
+            // }
+          
+          &__inner{
+            &__top{
+              width: 100%;
+              height: 150px;
+              background-color: #202120;
+            }
+            &__image{
+              height: 100%;
+            //   background: url("http://lorempixel.com/250/150/") no-repeat center;
+              background-size: 100% 100%;
+            }
+            &__bottom{
+              padding: 15px;
+              text-align: center;
+              width: 100%;
+              height: 150px;
+              
+              &--blue{
+                background: #428bca;
+              }
+              &--green{
+                background: #34bf49;
+              }
+              &--lightblue{
+                background: #0099E5;
+              }
+            }
+          }
+          
+          &__desc{
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.8px;
+            color: #fff;
+          }
+          
+          &__action--items{
+            text-align: center;
+          }
+        }  
+      }
+    /* END: Module - Theme - Desktop */
+}
+
+@mixin mod-theme-tablet(){
+    /* START: Module - Theme - Tablet */
+    
+    /* END: Module - Theme - Tablet */
+}
+
+@mixin mod-theme-mobile(){
+    /* START: Module - Theme - Mobile */
+    
+    /* END: Module - Theme - Mobile */
+}

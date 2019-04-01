@@ -1,0 +1,79 @@
+@mixin mod-login-form(){
+    /* START: Module Login Form - Desktop */
+    .login-form{
+        &__container{
+            width: 100%;
+            @include display-flex();
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        &__wrapper{
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            box-shadow: 2px 2px 10px #000;
+            padding: 40px 15px;
+            margin: 0 auto;
+            border-radius: 4px;
+
+            &--logo{
+                margin-bottom: 20px;
+
+                &__image{
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+
+            .form-group{
+                &__label{
+
+                }
+                &__input{
+                    width: 320px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }    
+    /* END: Module Login Form - Desktop */
+}
+
+@mixin mod-login-form-tablet(){
+    /* START: Module Login Form - Tablet */
+    
+    /* END: Module Login Form - Tablet */
+}
+
+@mixin mod-login-form-mobile(){
+    /* START: Module Login Form - Mobile */
+    .login-form{
+        &__container{
+            
+        }
+        &__wrapper{
+            padding: 30px 10px;
+            width: 100%;
+
+            &--logo{
+
+                &__image{
+                    
+                }
+            }
+
+            .form-group{
+                padding: 0;
+
+                &__label{
+
+                }
+                &__input{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    /* END: Module Login Form - Mobile */
+}

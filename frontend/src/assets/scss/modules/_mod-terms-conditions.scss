@@ -1,0 +1,78 @@
+@mixin mod-terms-conditions(){
+    /* START: Module Terms & Conditions - Desktop */
+    .terms{
+        &__container{
+            display: none;
+            color: #000;
+            font-family: $font-regular;
+            width: 70%;
+            margin: 20px auto;
+            padding: 50px 40px;
+            // border-radius: 5px;
+        }
+        &__heading{
+            text-align: center;
+            @include rem-fallback(font-size, 21);
+        }
+        &__items{
+            margin-top: 20px;
+        }
+        &__item{
+            margin: 15px 0;
+            @include rem-fallback(font-size, 15);
+            @include rem-fallback(line-height, 20);
+            list-style: circle;
+        }
+    }
+
+    .fancybox-close-small{
+        color: #454545;
+        stroke-width: 2.5;
+    }
+
+    .fancybox-slide--html .fancybox-content{
+        margin-bottom: 20px;
+    }
+    .fancybox-slide--html{
+        padding: 0 20px;
+    }
+    /* END: Module Terms & Conditions - Desktop */
+}
+
+@mixin mod-terms-conditions-tablet(){
+    /* START: Module Terms & Conditions - Tablet */
+    .terms{
+        &__container{
+            width: 80%;
+        }
+        &__heading{
+        }
+        &__items{
+        }
+        &__item{
+            margin: 20px 0;
+        }
+    }
+    /* END: Module Terms & Conditions - Tablet */
+}
+
+@mixin mod-terms-conditions-mobile(){
+    /* START: Module Terms & Conditions - Mobile */
+    .terms{
+        &__container{
+            width: 100%;
+            margin: 20px auto;
+            padding: 40px 25px;
+            // border-radius: 5px;
+        }
+        &__heading{
+            @include rem-fallback(font-size, 18);
+        }
+        &__items{
+        }
+        &__item{
+            @include rem-fallback(font-size, 14);
+        }
+    }
+    /* END: Module Terms & Conditions - Mobile */
+}
